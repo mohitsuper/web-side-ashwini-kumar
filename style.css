@@ -1,0 +1,500 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'popiens',sans-serif;
+  text-decoration:none;
+}
+
+
+:root{
+  --creem: #dfe2d1;
+   --black:#333;
+   --dg-white:#eee;
+   --red:#DC9A5F;
+  
+}
+
+html{
+  font-size:62.5%;
+  scroll-behavior: smooth;
+
+}
+body {
+    color:black;
+    background: white;
+
+}
+
+.main{
+  max-width: 120rem;
+    position: fixed;
+    z-index: 1000;
+    width:100%;
+
+}
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fff;
+  height: 8rem;
+  width:100%;
+  padding: 4rem 2rem;
+  box-shadow: -.1rem -.1rem 1rem .1rem #222;
+}
+
+.logo{
+  display: flex;
+  font-size:2rem ;
+  font-weight: 800;
+}
+nav{
+  display:flex;
+  gap:3rem;
+  font-size: 1.5rem;
+
+}
+nav a{
+    text-decoration: none;
+    color:#333;
+    position: relative;
+    cursor: pointer;
+}
+nav a::after{
+content: '';
+  width: 0;
+  height: .3rem;
+  position: absolute;
+  background:#333;
+  left:0;
+  color:white;
+  bottom: -.5rem;
+  transition: 0.5s;
+}
+nav a:hover::after{
+  width: 100%;
+}
+
+ header .search{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+font-size: 1.5em;
+justify-content:center;
+align-items: center;
+cursor: pointer;
+}
+
+ .searchbox{
+  display: flex;
+  position: absolute;
+  width:100%;
+  height:0;
+  align-items: center;
+  background: #fff;
+  padding:0 3rem;
+  left:0%;
+  top:-100%;
+  transition: 0.5s ease-in-out;
+}
+.searchbox.active{
+  top:0;
+}
+.searchbox input{
+  outline: 0;
+  border:0;
+  width:100%;
+  height: 5rem;
+  font-size:1.25em;
+  color:#000;
+  background: #fff;
+  border-bottom: 1px solid #333;
+}
+
+/*------------sider page css-----------*/
+
+/*------------home page css------------*/
+
+.swiper .swiper-slide img {
+      margin-top: 8.5rem;
+ margin-bottom:0;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
+ .swiper .swiper-slide .button{
+  position: absolute;
+  bottom: 13rem;
+  left:11.2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width:15rem;
+
+}
+.button{
+  display: inline-block;
+  margin-top:1rem;
+  border-radius: 5rem;
+  background: transparent;
+  cursor: pointer;
+  color:black;
+    padding:1rem 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border :1px solid black;
+ transition: 0.5s background,0.5s color,0.5s box-shadow;
+}
+.button:hover{
+  background:#000;
+  color:white;
+  box-shadow: 0 0 1rem .2rem #eee;
+}
+/*-------sider logo page css-----------*/
+.explor {
+  display:flex;
+    margin-top: 2rem;
+  margin-bottom: 2rem;
+justify-content: center;
+align-content: center;
+position: relative;
+width:100%;
+}
+.explor .box{
+  height: 10rem;
+  flex: 1 1 40rem;
+  background: #eee;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.explor .box:after {
+  content: '';
+  height: 10rem;
+  width: .5rem;
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: .5rem;
+}
+.explor .box h1{
+  font-size: 2.5rem;
+  text-align: center;
+  
+}
+.explor .box h1 span{
+  color:#D37E34;
+}
+
+.explor .swiper .swiper-slide img{
+  border-radius: 30%;
+  position: relative;
+  border:none;
+  height:6rem;
+  width: 6rem;
+  top:-6rem;
+  left:0;
+  z-index: 10;
+
+
+}
+/*------------about page css-----------*/
+.about .row{
+  display :flex;
+  align-items: center;
+  gap:1.5rem;
+  flex-wrap: wrap;
+}
+.about .row .img{
+  flex:1 1 40rem;
+}
+.about .row .img img{
+  width: 100%;
+}
+.about  .row .cap{
+  flex:1 1 40rem;
+  text-align: center;
+}
+.about  .row  .cap h3{
+  font-size: 3rem;
+  color:var(--white);
+  font-weight: 500;
+}
+.about .row .cap p{
+  padding:1rem 0;
+  line-height: 2;
+  font-size: 1.8rem;
+  color:var(--light-white);
+}
+/*----------the shop page css---------*/
+.shop{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:0rem;
+  margin-bottom: 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  width:100%; 
+  margin-top:1.5rem;
+  margin-bottom:0rem;  
+}
+.heading span{
+  color: var(--red);
+}
+/*----------the shop page in css------*/
+.shop{
+  padding:1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+}
+.shop .swiper-slide{
+  margin-top: 1.5rem;
+  height:60rem;
+  text-align: center;
+  width: 45rem;
+  box-shadow: 0rem 0rem 1rem .2rem #333;
+  border-radius: .5rem;
+}
+
+
+.shop .swiper .swiper-wrapper .swiper-slide  img{
+  width: 100%;
+  margin-top: 0rem;
+  display: flex;
+  height: 43rem;
+  margin-bottom: 1.2rem;
+}
+
+.shop .swiper .swiper-wrapper .swiper-slide  h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.shop .swiper .swiper-wrapper .swiper-slide  p{
+  color:#333;
+  font-size: 1.5rem;
+  word-spacing: .2em;
+}
+
+.shop .swiper .swiper-wrapper .swiper-slide  h3{
+  color:#CAB546;
+  font-size: 1.6rem;
+}
+
+.shop .swiper .swiper-wrapper .swiper-slide  button{
+  bottom: 2.7rem;
+  left:15rem;
+  
+  
+}
+
+/*------------contact css page--------*/
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap:2.5em;
+}
+.contact .row{
+  display: flex; 
+  align-items:center;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.contact  .row img{
+  width: 100%;
+}
+
+.contact .row .img img{
+  flex:1 1 40rem;
+}
+
+
+
+.contact form{
+  flex:1 1 40rem;
+}
+
+.contact form .box{
+  width:100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+background-color:var(--dg-white);
+font-size:1.8rem;
+color:var(--white);
+padding: 1.4rem;
+outline: none;
+border: none;
+}
+
+.contact  form span{
+  font-size:1.6rem;
+  color:var(--black);
+}
+
+.contact form .radio{
+margin-top: 2rem;}
+
+.contact form .radio lable{
+font-size: 1.4rem;
+color: var(--dg-white);
+margin-left: .5rem;
+}
+.contact  form .radio #female{
+margin-left: 2rem;
+cursor: pointer;
+
+}
+.contact   form .radio lable input:cliked{
+color:var(--green);}
+
+.contact form .radio input{
+width: 2rem;
+height: 2rem;
+color: var(--green);
+cursor: pointer;
+  
+}
+
+ .contact .row{
+  position: relative;
+}
+
+.contact .row .contact-no{
+  position: absolute;
+  bottom:2rem;
+  left:2rem;
+}
+
+
+.contact .row .contact-no h4{
+  color:Var(--black);
+  font-size: 1.1rem;
+}
+.contact .row .contact-no span{
+color:var(--red);
+font-size: 1.5rem;
+}
+
+/*------------footer the strat part----*/
+
+.review .silds-review{
+  width:35rem;
+ border-radius: .5rem; 
+ background: var(--dg-white);
+ font-style: 1.6rem;
+ padding: 2rem;
+ margin-bottom: 1rem;
+}
+.review .silds-review p{
+  line-height:1;
+  color:var(--black);
+  font-size: 2rem;
+  font-weight: 100;
+}
+.review .silds-review .user {
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+}
+
+.review .silds-review .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(1.2);
+  background-position:center;
+}
+.review .silds-review .user h3 {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  
+}
+  .review .silds-review .user .stra  ion-icon{
+    color:#DBE446;
+    font-size: 3rem;}
+
+
+
+.footer .share{
+   margin-top:1rem;
+    background: var(--creem);
+    padding-top: 1rem;
+    text-align: center;
+        padding-bottom: 1rem;
+
+    
+}
+.footer .share a{
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  color:var(--black);
+  border-radius: 50%;
+  font-size: 4rem;
+
+
+}
+.footer .share h4{
+  color:var(--black);
+}
+
+.footer .share h4 span{
+color:var(--red);}
+
+
+/*----------the end-------------------*/
+
+@media only screen and (max-width:540px){
+  html{
+    font-size: 45%;
+  }
+
+ .swiper .swiper-slide .button {
+   position: absolute;
+   bottom: 6rem;
+   left: 5rem;
+   padding: .8rem;
+   border-radius: 2rem;
+   width: 10rem;
+   font-size: 1rem;
+
+ }
+ .explor{
+   flex-wrap: wrap;
+   margin-bottom: 2rem;
+ }
+ 
+ .explor .box {
+   
+   height: 10rem;
+   flex: 1 1 100rem;
+   background: #eee;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   display: flex;
+   font-size: .5rem;
+ }
+}
