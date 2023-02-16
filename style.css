@@ -151,6 +151,8 @@ cursor: pointer;
   text-align: center;
   border :1px solid black;
  transition: 0.5s background,0.5s color,0.5s box-shadow;
+   text-decoration:none;
+
 }
 .button:hover{
   background:#000;
@@ -166,6 +168,8 @@ justify-content: center;
 align-content: center;
 position: relative;
 width:100%;
+    z-index: 0;
+
 }
 .explor .box{
   height: 10rem;
@@ -175,6 +179,7 @@ width:100%;
   align-items: center;
   position: relative;
   display: flex;
+
 }
 
 /*.explor .box:after {
@@ -204,7 +209,6 @@ width:100%;
   width: 6rem;
   top:-6rem;
   left:0;
-  z-index: 10;
 
 
 }
@@ -301,6 +305,8 @@ width:100%;
 .shop .swiper .swiper-wrapper .swiper-slide  button{
   bottom: 2.7rem;
   left:15rem;
+    text-decoration:none;
+
   
   
 }
