@@ -549,13 +549,27 @@ overflow-y: scroll;
   font-weight: 200;
 }
 
+.navbar{
+  display: none;
+}
+
 /*----------the end-------------------*/
 
 @media only screen and (max-width:540px){
   html{
     font-size: 45%;
   }
+  
+  .navbar-big,.logo{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+.d-flex .form-control ,.d-flex button{
+      display: none;
 
+}
  .swiper .swiper-slide .button {
    position: absolute;
    bottom: 6rem;
