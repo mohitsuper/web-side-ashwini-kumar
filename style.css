@@ -29,8 +29,10 @@ body {
 }
 
 .main{
+  position: fixed;
+}
+section{
   max-width: 120rem;
-    position: fixed;
     z-index: 1000;
     width:100%;
 
@@ -50,7 +52,7 @@ header{
 .logo{
   display: flex;
   font-size:2rem ;
-  font-weight: 800;
+  font-weight: 300;
 }
 nav{
   display:flex;
@@ -238,8 +240,6 @@ width:100%;
 .shop{
   display: flex;
   flex-wrap: wrap;
-  margin-top:0rem;
-  margin-bottom: 0rem;
   justify-content: center;
   align-items: center;
 }

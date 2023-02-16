@@ -1,5 +1,5 @@
 
-  let search = document.querySelector('.searchbox');
+  /*let search = document.querySelector('.searchbox');
   
   let search_open = document.querySelector('.search');
   
@@ -12,4 +12,4 @@
   {
     searchbox.classList.add('active');
   }
-  
+  */
