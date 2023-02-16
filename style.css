@@ -270,9 +270,10 @@ width:100%;
 }
 .shop .swiper-slide{
   margin-top: 1.5rem;
-  height:60rem;
+  height:65rem;
   text-align: center;
-  width: 45rem;
+  margin-bottom: 2rem;
+  width: 50rem;
   box-shadow: 0rem 0rem 1rem .2rem #333;
   border-radius: .5rem;
 }
@@ -282,7 +283,7 @@ width:100%;
   width: 100%;
   margin-top: 0rem;
   display: flex;
-  height: 43rem;
+  height: 45rem;
   margin-bottom: 1.2rem;
 }
 
@@ -293,8 +294,7 @@ width:100%;
 }
 .shop .swiper .swiper-wrapper .swiper-slide  p{
   color:#333;
-  font-size: 1.5rem;
-  word-spacing: .2em;
+  font-size: 1.3rem;
 }
 
 .shop .swiper .swiper-wrapper .swiper-slide  h3{
@@ -303,7 +303,7 @@ width:100%;
 }
 
 .shop .swiper .swiper-wrapper .swiper-slide  button{
-  bottom: 2.7rem;
+  bottom: 1rem;
   left:15rem;
     text-decoration:none;
 
@@ -389,7 +389,7 @@ cursor: pointer;
 
 .contact .row .contact-no{
   position: absolute;
-  bottom:2rem;
+  bottom:6rem;
   left:2rem;
 }
 
