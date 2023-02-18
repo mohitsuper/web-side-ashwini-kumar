@@ -281,8 +281,9 @@ width:100%;
 
 .shop .swiper .swiper-wrapper .swiper-slide  img{
   width: 100%;
-  margin-top: 0rem;
   display: flex;
+    margin-top: 0rem;
+
   height: 45rem;
   margin-bottom: 1.2rem;
 }
