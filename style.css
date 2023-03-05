@@ -80,6 +80,14 @@ content: '';
 nav a:hover::after{
   width: 100%;
 }
+#menu-btu{
+  display: none;
+  font-size: 2.5rem;
+    color:#333;
+
+}
+
+
 
  header .search{
   display: flex;
@@ -552,6 +560,12 @@ overflow-y: scroll;
 
 .navbar{
   display: none;
+  width: 100%;
+  background: transparent;
+  
+}
+.navbar .container{
+  box-shadow: 0rem 0rem 1rem .1rem #333;
 }
 
 /*----------the end-------------------*/
@@ -561,6 +575,7 @@ overflow-y: scroll;
     font-size: 45%;
   }
   
+
   .navbar-big,.logo{
     display: none;
   }
@@ -569,6 +584,8 @@ overflow-y: scroll;
   }
 .d-flex .form-control ,.d-flex button{
       display: none;
+      margin:0;
+      padding: 0;
 
 }
  .swiper .swiper-slide .button {
@@ -582,13 +599,12 @@ overflow-y: scroll;
 
  }
  .explor{
-   margin-bottom: 2rem;
+   flex-wrap: wrap;
  }
  
  .explor .box {
    display: flex;
    flex-wrap: wrap;
-   margin-right:0;
    height: 10rem;
    flex: 1 1 40rem;
    background: #eee;
@@ -597,4 +613,14 @@ overflow-y: scroll;
    position: relative;
    font-size: .5rem;
  }
+ 
+.explor .box .swiper-wrapper .swiper-slide img{
+   margin-top: 0;
+      margin-right: 0;
+      padding: 0;
+
+}
+#menu-btu{
+  display: block;
+}
 }

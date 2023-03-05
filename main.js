@@ -1,15 +1,18 @@
 
-  /*let search = document.querySelector('.searchbox');
+
+
+
+console.log('Hello World!');
+var sidemeu = document.getElementById('sidemenu');
   
-  let search_open = document.querySelector('.search');
-  
-  let search_close = document
-  .querySelector('.close');
-  
-  search_close.style.display = 'none';
-  
-  search.onclick = function()
-  {
-    searchbox.classList.add('active');
+  function openemenu(){
+    sidemenu.style.right ='0';
   }
-  */
+  
+  function closemenu(){
+        sidemenu.style.right ='-200px';
+
+  }
+
+/*------------------------slider js----*/
+
