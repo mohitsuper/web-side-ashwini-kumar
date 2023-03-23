@@ -570,14 +570,108 @@ overflow-y: scroll;
 
 /*----------the end-------------------*/
 
-@media only screen and (max-width:540px){
+@media only screen and (max-width:768px){
+    #menu-btu{
+     display: inline-block;
+    }
+    section {
+      padding: .1rem;
+      margin-bottom: 0rem;
+      padding-top: 0;
+    }
+  
+.header  .navbar-big a{
+  display:inline-block;
+  margin: 2rem;
+}
+
+.header  .navbar-big.active{
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+/**-----             ----------/--*/
+  
+
+.navbar-big{
+  display:flex;
+  z-index: 1;
+  text-align: center;
+    flex-direction: column;
+
+}
+
+.navbar-big{
+  width: 30%;
+  height: 100vh;
+  background:#fff;
+  top:0;
+  right:-50rem;
+  position: fixed;
+  padding-top:5rem;
+  
+}
+
+  
+nav a::after{
+content: '';
+  width: 0;
+  height: 0rem;
+  position: absolute;
+  background:fff;
+  left:0;
+  color:white;
+  bottom: -.5rem;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  font-weight: 800;
+  font-size: 1.7rem;
+  
+}
+
+.navbar-big form{
+  width:90%;
+  margin-left:1rem;
+}
+.navbar-big ion-icon{
+  position: absolute;
+  top:25px;
+  left:25px;
+  cursor: pointer;
+  display: block;
+}
+.count .box-canter {
+  margin-bottom: 2rem;
+ margin-top:2rem; 
+
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+ .swiper .swiper-slide .button {
+   position: absolute;
+   bottom: 3rem;
+   left: 3rem;
+   padding: .8rem;
+   border-radius: 2rem;
+   width: 10rem;
+   font-size: 1rem;
+
+ }
+ 
+  .explor {
+    flex-wrap: wrap;
+  }
+}
+@mdia only screen and (max-width:540px){
   html{
     font-size: 45%;
   }
   
 
-  .navbar-big,.logo{
-    display: none;
+  .logo{
+    display: inline-block;
   }
   .navbar{
     display: block;
