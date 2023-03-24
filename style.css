@@ -97,6 +97,7 @@ nav a:hover::after{
   display: none;
   font-size: 2.5rem;
     color:#333;
+    
 
 }
 
@@ -143,6 +144,14 @@ cursor: pointer;
 
 /*------------home page css------------*/
 
+
+.swiper-pagination-bullet{
+   background:#333;
+ }
+ 
+ .swiper-pagination-bullet-active{
+   background: #000;
+ }
 .swiper .swiper-slide img {
       margin-top: 8.5rem;
  margin-bottom:0;
@@ -238,6 +247,10 @@ width:100%;
 
 }
 /*------------about page css-----------*/
+.about{
+      margin-top: 2.5rem;
+     margin-bottom: 2.5rem;
+}
 .about .row{
   display :flex;
   align-items: center;
@@ -338,9 +351,11 @@ width:100%;
 }
 
 /*------------contact css page--------*/
+
+
+
 .contact{
   margin-top: 0;
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -349,16 +364,20 @@ width:100%;
 .contact .row{
   display: flex; 
   align-items:center;
-  flex-wrap: wrap;
   gap:1.5rem;
 }
 
 .contact  .row img{
   width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .contact .row .img img{
-  flex:1 1 40rem;
+    flex:1 1 40rem;
+
 }
 
 
@@ -498,19 +517,9 @@ font-size: 1.5rem;
 .footer .share h4 span{
 color:var(--red);}
 /*------------feture page css ------*/
-.fetures .box-canter {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 5fr));
-  gap: 1.5rem;
-  align-items: center;
 
 
-}
 
-.box{
-  width:40rem;
-  height: 20rem;
-}
 /*----------video page css-------------*/
 
 
@@ -575,14 +584,26 @@ color:var(--red);}
 @media (max-width:600px){
   .video{
   display: grid;
+  width:100%;
   grid-template-columns: 1fr;
 
+}
+.video .main-video{
+  width:100%;
+  height: 35rem;
+}
+
+.video .row-video .row-item {
+  width: 100%;
+  height: 20rem;
 }
 }
 
 
 .navbar{
   display: none;
+  margin-top:0;
+  margin-bottom: 0;
   width: 100%;
   background: transparent;
   
@@ -597,14 +618,18 @@ color:var(--red);}
   
   html{
     font-size: 48%;
+    width:100%;
   }
     #menu-btu{
      display: inline-block;
+     position: absolute;
+     top:4rem;
+     right: 2rem;
     }
     section {
       margin-bottom: 0rem;
       padding-top: 0;
-      max-width: 50rem;
+      max-width: 100rem;
 
     }
     
@@ -696,7 +721,7 @@ nav a:hover{
     flex-wrap: wrap;
   }
 }
-@mdia only screen and (max-width:540px){
+@media only screen and (max-width:540px){
   html{
     font-size: 45%;
   }
