@@ -194,7 +194,7 @@ width:100%;
 }
 .explor .box{
   height: 10rem;
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   background: #eee;
   justify-content: center;
   align-items: center;
@@ -222,6 +222,10 @@ width:100%;
   color:#D37E34;
 }
 
+
+.explor .swiper{
+  flex:1 1 80rem;
+}
 .explor .swiper .swiper-slide img{
   border-radius: 30%;
   position: relative;
@@ -493,7 +497,20 @@ font-size: 1.5rem;
 
 .footer .share h4 span{
 color:var(--red);}
+/*------------feture page css ------*/
+.fetures .box-canter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 5fr));
+  gap: 1.5rem;
+  align-items: center;
 
+
+}
+
+.box{
+  width:40rem;
+  height: 20rem;
+}
 /*----------video page css-------------*/
 
 
@@ -505,6 +522,7 @@ color:var(--red);}
       padding:10px;
     }
     .video{
+      margin-bottom: 15rem;
       display: grid;
       height: 500px;
       padding: 15px;
@@ -554,7 +572,7 @@ color:var(--red);}
 
     }
 
-@media (max-width:600px;){
+@media (max-width:600px){
   .video{
   display: grid;
   grid-template-columns: 1fr;
@@ -688,6 +706,7 @@ nav a:hover{
     display: inline-block;
   }
   .navbar{
+    width:100%;
     display: block;
   }
 .d-flex .form-control ,.d-flex button{
@@ -696,7 +715,8 @@ nav a:hover{
       padding: 0;
 
 }
- .swiper .swiper-slide .button {
+ .swiper .swiper-slide .button
+ {
    position: absolute;
    bottom: 6rem;
    left: 5rem;
@@ -706,7 +726,7 @@ nav a:hover{
    font-size: 1rem;
 
  }
- .explor{
+/* .explor{
    flex-wrap: wrap;
  }
  
@@ -727,7 +747,7 @@ nav a:hover{
       margin-right: 0;
       padding: 0;
 
-}
+}*/
 
 #menu-btu{
   display: block;
