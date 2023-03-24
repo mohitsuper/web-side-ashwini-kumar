@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+    
+    .body{
+      background: #eee;
+      
+    }
+    .heading{
+      width: 100%;
+      font-size: 25px;
+      font-weight: 550;
+      text-transform: uppercase;
+      padding:10px;
+    }
+    .video{
+      display: grid;
+      height: 500px;
+      padding: 15px;
+      background: #fff;
+      grid-template-columns: 2fr 1fr;
+      gap:10;
+    }
+    
+    .video .main-video{
+      padding: 10px;
+      background: #eee;
+    }
+    .video .main-video .iframe{
+      width: 100%;
+    }
+    
+    .video .row-video{
+      padding:10px;
+      background: #eee;
+      overflow-y:scroll;
+      
+      gap:15;
+    }
+    
+    .video .row-video::-webkit-scrollbar{
+      width: 8px;
+    }
+   .video .row-video::-webkit-scrollbar-track{
+     background: #ccc;
+     border-radius: 50px;
+   }
+  
+  .video .row-video::-webkit-slider-thumb {
+    background: #333;
+    border-radius: 5rem;
+  }
+
+        .video .row-video .row-item{
+          background: #fff;
+          border: 1px solid #333;
+        }
+
+    .video .row-video .row-item .iframe iframe{
+      width:100%;
+            height: 150px;
+            
+
+    }
+
+@media (max-width:600px;){
+  .video{
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+}
+  </style>
+</head>
+
+<body>
+ <section id="video" class="video">
+  
+  
+  <div class="main-video">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/eeOrjmplbWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+  
+  <div class="row-video">
+    
+    <div class="row-item">
+    <div class="iframe">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Fh53p0Tnnxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+       <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://youtu.be/YKMviuNeJ_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+   
+    <div class="row-item">
+    <div class="iframe">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="heading">
+      <p> 1. the is a heading</p>
+    </div>
+   </div>
+  </div>
+  
+ </section>
+</html>
