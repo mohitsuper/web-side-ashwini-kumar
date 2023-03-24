@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'popiens',sans-serif;
   text-decoration:none;
+  transition: 0.5s;
   border-radius: .5rem;
 }
 
@@ -284,6 +285,7 @@ width:100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 .heading{
@@ -517,6 +519,39 @@ font-size: 1.5rem;
 .footer .share h4 span{
 color:var(--red);}
 /*------------feture page css ------*/
+.fetures {
+  display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(40rem,5fr));
+    width:100%;
+
+}
+
+
+
+/*.fetures{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.fetures .cantener{
+  width:100%;
+}*/
+
+.fetures .cantener{
+      margin: 1rem;
+      
+
+}
+
+.fetures .cantener img{
+    width:100%;
+    border-radius: 2rem;
+    height: 29.6rem;
+}
+.fetures .cantener img:hover{
+  transform: scale(0.9);
+}
 
 
 
@@ -657,11 +692,11 @@ color:var(--red);}
 }
 
 .navbar-big{
-  width: 30%;
+  width: 20rem;
   height: 100vh;
   background:#fff;
   top:0;
-  right:-50rem;
+  right:-30rem;
   position: fixed;
   padding-top:5rem;
   
