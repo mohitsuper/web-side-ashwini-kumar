@@ -145,7 +145,10 @@ cursor: pointer;
 
 /*------------home page css------------*/
 
-
+.shop .swiper-pagination{
+  position: relative;
+  bottom: 0;
+}
 .swiper-pagination-bullet{
    background:#333;
  }
@@ -692,7 +695,7 @@ flex-wrap: wrap;
 }
 
 .navbar-big{
-  width: 20rem;
+  width:50% ;
   height: 100vh;
   background:#fff;
   top:0;
