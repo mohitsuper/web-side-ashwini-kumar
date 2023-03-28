@@ -744,6 +744,10 @@ nav a:hover{
   display: flex;
   flex-direction: column;
 }
+
+.contact-no{
+  width:2rem;
+}
  .swiper .swiper-slide .button {
    position: absolute;
    bottom: 3rem;
