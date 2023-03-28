@@ -777,9 +777,7 @@ nav a:hover{
     display: block;
   }
 .d-flex .form-control ,.d-flex button{
-      display: none;
-      margin:0;
-      padding: 0;
+      display: block;
 
 }
  .swiper .swiper-slide .button
