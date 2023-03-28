@@ -8,15 +8,73 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-  .shop{
-    display: flex;
-    flex:wrap;
-    flex-direction: row;
-    text-align: left;
+  .shops{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(40rem,5fr));
+    width:100%;
   }
-  .shop .swiper-wrapper {
-        flex:wrap;
-        flex-direction: row;
+  
+  .shops{
+    
+  }
+.shop{
+  padding:1rem;
+  width: 100%;
+  height: fit-content;
+  
+}
+.shop .swiper-slide{
+  margin-top: 1.5rem;
+  height:65rem;
+  margin-left: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width:45rem;
+  box-shadow: 0rem 0rem 1rem .2rem #333;
+  border-radius: .5rem;
+  transition: 0.3s;
+}
+
+.shop .swiper-slide:hover{
+  box-shadow: 0rem 0rem 1rem .1rem #275A8D;
+transform:scale(0.98);
+}
+
+
+.shop .shops .swiper-slide  img{
+  width: 100%;
+    margin-top: 0rem;
+
+  height: 45rem;
+  margin-bottom: 1.2rem;
+}
+
+.shop .shops  .swiper-slide  h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.shop .shops .swiper-slide  p{
+  color:#333;
+  font-size: 1.3rem;
+}
+
+.shop .shops .swiper-slide  h3{
+  color:#CAB546;
+  font-size: 1.6rem;
+}
+
+.shop .shops .swiper-slide  button{
+  bottom: 1rem;
+  left:16rem;
+    text-decoration:none;
+
+  
+  
+}
+
+  .shops .swiper-wrapper {
+
   }
   body{
   }
@@ -25,8 +83,7 @@
  <section id="shop" class="shop">
    <h1 class="heading"><span>shop</span> Now</h1>
    
-   <div class="swiper shops">
-     <div class="swiper-wrapper">
+   <div class="shops">
      <div class="swiper-slide">
        <img src="img/shop1.jpg" alt="">
        <h1>yoga meet</h1>
@@ -177,5 +234,38 @@
  </section>
 
 </body>
+
+<script>
+      var swiper = new Swiper(".sho", {
+        
+        spaceBetween: 30,
+      autoplay: {
+       delay: 500,
+      disableOnInteraction:false,
+        loop: true,
+      
+        },
+        
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        
+        breakpoints: {
+          540: {
+            slidesPerView:1,
+            
+          },
+          768: {
+            slidesPerView: 2,
+            
+          },
+          1024: {
+            slidesPerView: 5,
+
+          },
+        },
+      });
+    </script>
 
 </html>

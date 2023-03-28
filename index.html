@@ -702,16 +702,18 @@ var swiper = new Swiper(".mySwiper", {
 
 <script>
       var swiper = new Swiper(".shops", {
-        
+
         spaceBetween: 30,
       autoplay: {
        delay: 500,
-      disableOnInteraction:false,
+      disableOnInteraction:true,
+      
         loop: true,
-        
+      grid:2,
       
         },
         
+                
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

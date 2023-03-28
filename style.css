@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'popiens',sans-serif;
   text-decoration:none;
-  transition: 0.5s;
+  transition: 0.2s;
   border-radius: .5rem;
 }
 
@@ -216,16 +216,6 @@ width:100%;
 
 }
 
-/*.explor .box:after {
-  content: '';
-  height: 10rem;
-  width: .5rem;
-  background: #333;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  border-radius: .5rem;
-}*/
 .explor .box h1{
   font-size: 2.5rem;
   text-align: center;
@@ -238,6 +228,7 @@ width:100%;
 
 .explor .swiper{
   flex:1 1 80rem;
+  width: 100%;
 }
 .explor .swiper .swiper-slide img{
   border-radius: 30%;
