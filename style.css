@@ -153,6 +153,10 @@ cursor: pointer;
    background:#333;
  }
  
+ .swiper-button-prev,.swiper-button-next{
+   color: #333;
+ }
+ 
  .swiper-pagination-bullet-active{
    background: #000;
  }

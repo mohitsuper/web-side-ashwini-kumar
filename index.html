@@ -76,7 +76,10 @@
 
       </div>
           <div class="swiper-pagination" ></div>
-
+          
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
     </div>
 
   </section>
@@ -296,6 +299,9 @@
 
      </div>
                <div class="swiper-pagination" ></div>
+          <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+            
 
    </div>
 
@@ -623,9 +629,9 @@
 <script>    
 var swiper = new Swiper(".mySwiper", {
         spaceBetween: 5,
-        centeredSlides: true,
-        autoplay: {
+       autoplay: {
           delay: 2500,
+          direction: 'vertical',
           disableOnInteraction: false,
           loop:true,
         },
@@ -720,6 +726,11 @@ var swiper = new Swiper(".mySwiper", {
           el: ".swiper-pagination",
           clickable: true,
         },
+        
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
         
         breakpoints: {
           540: {
