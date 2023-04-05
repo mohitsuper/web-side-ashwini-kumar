@@ -655,7 +655,7 @@ flex-wrap: wrap;
      display: inline-block;
      position: absolute;
      top:4rem;
-     right: 4rem;
+     right: 1.5rem;
     }
     section {
       margin-bottom: 0rem;
@@ -739,7 +739,7 @@ nav a:hover{
 }
 
 .contact-no{
-  width:2rem;
+  width:30rem;
 }
  .swiper .swiper-slide .button {
    position: absolute;
