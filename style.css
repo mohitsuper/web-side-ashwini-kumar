@@ -765,7 +765,14 @@ nav a:hover{
 margin-top:0;
 
 }
+.shop .swiper .swiper-wrapper .swiper-slide button {
+  bottom: 1rem;
+  left: 17.5rem;
+  text-decoration: none;
 
+
+
+}
 }
 @media only screen and (max-width:540px){
   html{

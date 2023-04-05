@@ -1,67 +1,130 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>shop page</title>
+
+  <title>aswini kumar</title>
+  
+  <!-- HTML -->
+  
+  <link rel="shortcut icon" href="img/logo.png" type="img/icon">
+  
+  <!----->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <style>
-  .shops{
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(40rem,5fr));
-    width:100%;
-  }
-  
-  .shops{
-    
-  }
-.shop{
-  padding:1rem;
+
+.shops{
+  display: grid;
   width: 100%;
-  height: fit-content;
-  
+ grid-template-columns:repeat(auto-fit, minmax(40rem, 5fr));
+ 
+ 
+
 }
-.shops .swiper-slide{
+
+.shops .swiper-slide {
   margin-top: 1.5rem;
-  height:65rem;
+  height: 65rem;
   margin-left: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  width:45rem;
+  width: 45rem;
   box-shadow: 0rem 0rem 1rem .2rem #333;
   border-radius: .5rem;
   transition: 0.3s;
 }
 
-.shop .swiper-slide:hover{
+.shops .swiper-slide:hover {
   box-shadow: 0rem 0rem 1rem .1rem #275A8D;
-transform:scale(0.98);
+  transform: scale(0.98);
 }
 
 
-.shop .shops .swiper-slide  img{
+.shop .shops .swiper-slide img {
   width: 100%;
-    margin-top: 0rem;
+  margin-top: 0rem;
 
   height: 45rem;
   margin-bottom: 1.2rem;
 }
 
-.shop .shops  .swiper-slide  h1{
+.shop .shops .swiper-slide h1 {
   font-size: 2.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
-.shop .shops .swiper-slide  p{
-  color:#333;
+
+.shop .shops .swiper-slide p {
+  color: #333;
   font-size: 1.3rem;
 }
 
-.shop .shops .swiper-slide  h3{
-  color:#CAB546;
+.shop .shops .swiper-slide h3 {
+  color: #CAB546;
   font-size: 1.6rem;
+}
+
+.shop .shops .swiper-slide button {
+  bottom: 1rem;
+  left: 16rem;
+  text-decoration: none;
+
+
+
+}
+
+
+.buy-product{
+      margin-top: 2.5rem;
+     margin-bottom: 2.5rem;
+}
+.buy-product .swiper-slide{
+  display :flex;
+  align-items: center;
+  gap:1.5rem;
+  flex-wrap: wrap;
+    box-shadow: 0rem 0rem 1rem .1rem #275A8D;
+
+  
+}
+.buy-product .swiper-slide .img{
+  flex:1 1 40rem;
+}
+.buy-product .swiper-slide .img img{
+  width: 100%;
+}
+.buy-product .swiper-slide .content{
+  flex:1 1 40rem;
+}
+.buy-product  .swiper-slide .content h1{
+  font-size: 4rem;
+  color:#333;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.buy-product .swiper-slide .content p{
+  padding:1rem 0;
+  line-height: 2;
+  font-size: 1.8rem;
+  color:var(--light-white);
+}
+
+.buy-product .swiper-slide .content .price{
+  font-size: 4.5rem;
+  color:#00AEFF;
+  font-weight: 300;
 }
 
 .shop .shops .swiper-slide  button{
@@ -73,41 +136,94 @@ transform:scale(0.98);
   
 }
 
-  .shops .swiper-wrapper {
-
-  }
-  
-  .buy-product{
-    display: flex;
-    width: 100%;
-    height: 50rem;
-    border: :1px solid #666;
-    
-  }
-  
-  .buy-product .swiper-slide img{
-    width: 100%;
-    flex:1 1 60rem;
-  }
-    .buy-product .swiper-slide img{
-
-  
-  .buy-product .swiper-slide{
-    display: flex;
-    flex:wrap;
-    flex-direction: row;
-  }
-  body{
-  }
 </style>
+
 <body>
- <section id="shop" class="shop">
-   <h1 class="heading"><span>shop</span> Now</h1>
-   
-   
-   <section class="buy-product">
+  
+
+  <section class="main" id="main">
+    <header>
+       <h1 class="logo">Aswini Kumar.</h1>
+
+      <nav class="navbar-big" id="sidemenu">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+       <a href="shop.html">shop</a>
+        <a href="#service">Service</a>
+        <a href="#video">Video</a>
+        <a href="#contect">Contect</a>
+        
+            <form class="d-flex" class="form" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
+      <ion-icon name="close-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
+
+      </nav>
+    
+    <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
+
+    
+    </header>
+  </section>
+  
+  
+  
+
+  <!---<section id="home" class="home">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <img src="img/img1.png" alt="img/IMG1.JPG">
+      <a type="submit" onclick="isha()" class="button">Explor Now</a>
+      </div>
+     <div class="swiper-slide">
+    <img src="img/IMG4.jpg" alt="img/IMG1.JPG">
+      <a type="submit" class="button" onclick="ishamusic()">Explor Now</a>
+
+      </div>
+      <div class="swiper-slide">
+    <img src="img/IMG3.jpg" alt="img/IMG1.JPG">
+      <a type="submit" class="button"  onclick="indianmadical()">Explor Now</a>
+
+      </div>
+      <div class="swiper-slide">
+    <img src="img/img5.JPG" alt="img/IMG1.JPG">
+          <a type="submit" class="button" onclick="panjali()">Explor Now</a>
+
+      </div>
+
+      </div>
+          <div class="swiper-pagination" ></div>
+          
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+    </div>
+
+  </section>-->
+
+  
+  
+  <section class="benner" width="100%">
+
+             <img src="images/bennar/b1.jpg"  width="100%" alt="img/IMG1.JPG">
+
+  </section>
+  
+         <h1 class="heading"><span>shop</span> Now</h1>
+
+<section class="buy-product">
           <div class="swiper-slide">
-       <img src="img/shop1.jpg" alt="">
+            
+        <div class="img">
+                 <img src="img/shop1.jpg" alt="">
+
+        </div>
+        
+        <div class="content">
+          
        <h1>yoga meet</h1>
        <p>Office Meet Yoga (OMY) is a group of seasoned yogis, badass bootcamp instructors, meditation professionals, and sleep and nutrition experts ready to bring classes and workshops to you.</p>
     <h3>
@@ -118,11 +234,17 @@ transform:scale(0.98);
       <ion-icon name="star"></ion-icon>
      </h3>
      
+     <h3 class="price">250 </h3>
+     
     <button type="submit" class="button">Buy Now</button>
+    
+        </div>
      </div>
 
-   </section>
-   <div class="shops">
+   </section>  
+ <section id="shop" class="shop">
+   
+   <div class="swiper shops">
      <div class="swiper-slide">
        <img src="img/shop1.jpg" alt="">
        <h1>yoga meet</h1>
@@ -265,21 +387,201 @@ transform:scale(0.98);
 
      </div>
 
-     </div>
-               <div class="swiper-pagination" ></div>
+
 
    </div>
 
  </section>
+ <!-------fetures explan html page----->
+<section class="fetures">
+  <div class="cantener">
+    <img src="images/bennar/b18.jpg" alt="images/s/f1.png">
+  </div>
+    <div class="cantener">
+    <img src="images/bennar/b17.jpg" alt="images/s/f1.png">
+  </div>
+  <div class="cantener">
+    <img src="images/bennar/b10.jpg" alt="images/s/f1.png">
+  </div>
+  <div class="cantener">
+    <img src="images/bennar/b7.jpg" alt="images/s/f1.png">
+  </div>
 
+</section>
+<!-- -----------vide html page---------->
+
+
+
+ <!------------review------------------->
+<!-----------reviwe end ---------------->
+ 
+ <!------------the caontect page ------->
+ 
+
+<footer class="footer">
+  
+  <section>
+        <div class="share">
+
+    <div class="link">
+            
+      <a href="https://www.instagram.com/_super_mohit_vijay_/"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://mohitvijay.netlify.app/"><ion-icon name="person-circle-outline"></ion-icon></a>
+      <a href="https://github.com/mohitsuper"><ion-icon name="logo-github"></ion-icon></a>
+
+    </div>
+
+<h4>&copy;copyright <span>mr mohit vijay</span> wed devloper</h4>
+    </div>
+  </section>
+  
+  
+</footer>
+
+ 
 </body>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>    
+var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 5,
+       autoplay: {
+          delay: 2500,
+          direction: 'vertical',
+          disableOnInteraction: false,
+          loop:true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
 <script>
-      var swiper = new Swiper(".sho", {
+      var swiper = new Swiper(".explors", {
+        
+        spaceBetween: 0,
+      autoplay: {
+       delay: 500,
+      disableOnInteraction:false,
+        loop: true,
+      
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        
+        breakpoints: {
+          540: {
+            slidesPerView:3,
+            
+          },
+          768: {
+            slidesPerView: 5,
+            
+          },
+          1024: {
+            slidesPerView: 5,
+
+          },
+        },
+      });
+    </script>
+    
+    
+    <script>
+      var win;
+    
+      function isha() {
+        win = window.open('https://youtube.com/@ishafoundation', width = '500px', height = "500px");
+      }
+      
+      function ishamusic()
+      {
+       win = window.open('https://youtube.com/@soundsofisha', width = '500px', height = "500px");
+
+      }
+      
+        
+      
+      function indianmadical()
+      {
+       win = window.open('https://youtube.com/@theyogainstituteofficial', width = '500px', height = "500px");
+
+      }
+      
+    function panjali(){
+   win = window.open('https://youtube.com/@SwamiRamdevOfficial', width = '500px', height = "500px");
+    }
+ 
+    </script>
+    
+
+<script>
+      var swiper = new Swiper(".shops", {
+
+        spaceBetween: 30,
+      autoplay: {
+       delay: 3000,
+      disableOnInteraction:true,
+      
+        loop: true,
+      
+      
+        },
+        
+                
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+        
+        breakpoints: {
+          540: {
+            slidesPerView:1,
+            
+          },
+          768: {
+            slidesPerView: 2,
+            
+          },
+          1024: {
+            slidesPerView: 5,
+
+          },
+        },
+      });
+    </script>
+
+<script>
+      var swiper = new Swiper(".reviews", {
         
         spaceBetween: 30,
       autoplay: {
-       delay: 500,
+       delay: 3000,
       disableOnInteraction:false,
         loop: true,
       
