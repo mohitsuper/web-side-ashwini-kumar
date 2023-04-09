@@ -298,46 +298,82 @@ margin-top:0;
 }
 /*----------the shop page in css------*/
 
-  .product{
-    margin-top:2rem;
-    margin-bottom: 2rem;
-    width:100%;
-  }
-  
-  .product p{
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  
-   .product-main{
-         margin-top:2rem;
-         margin-bottom: 2rem;
-     display:flex;
-     width:100%;
-     flex-wrap: wrap;
-     gap:1rem;
-     align-items: center;
-     justify-content: center;
+.product {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        line-height: 2.5rem;
+      }
+    
+      .product p {
+        text-align: center;
+        font-size: 1rem;
+    
+        font-weight: 300;
+      }
+    
+    
+      .product-main {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    
+      }
+    
+      .product-main .pro-item {
+    
+        height: fit-content;
+        width: 30rem;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: 0rem 0rem 0.5rem .1rem #ccc;
+      }
+    
+      .product-main .pro-item .img img {
+        width: 100%;
+      }
+    
+      .product-main .pro-item .cantener {
+        text-align: left;
+        color: #000;
+      }
+    
+      .product-main .pro-item .cantener p {
+        text-align: left;
+    
+        font-size: 1.8rem;
+      }
+    
+      .product-main .pro-item .cantener span {
+        font-size: 2rem;
+        color: var(--red);
+      }
+    
+      .product-main .pro-item .cantener h3 {
+        color: #D8CC39;
+        font-size: 1.5rem;
+      }
+    
+      .product-main .pro-item .cantener h2 {
+        color: #333;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    
+      .product-main .pro-item a {
+        font-size: 3rem;
+        color: #333;
+        background: #fff;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-left: 80%;
+      }
      
-   }
-  .product-main .pro-item{
-    height: fit-content;
-    width: 30rem;
-    background: #fff;
-    border: .1rem solid #ccc;
-    padding: 1rem;
-  }
-
-  .product-main .pro-item .img img{
-    width: 100%;
-  }
-  
-    .product-main .pro-item .cantener{
-      text-align: center;
-      color:#000;
-    }
-
 
 .shop{
   padding:1rem;
