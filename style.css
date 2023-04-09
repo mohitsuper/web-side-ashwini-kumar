@@ -110,7 +110,7 @@ content: '';
   background:#333;
   left:0;
   color:white;
-  bottom: 1rem;
+  bottom: 5rem;
   transition: 0.5s;
 }
 nav a:hover::after , nav a.active::after{
@@ -165,7 +165,9 @@ cursor: pointer;
 }
 
 /*------------sider page css-----------*/
-
+.home  .swiper .swiper-wrapper .swiper-slide img{
+  margin-top: 0;
+}
 .hero{
   margin-bottom: 2rem;
     margin-top: 0rem;
@@ -332,7 +334,7 @@ cursor: pointer;
   width: 100%;
   z-index: -1;
   text-align: center;
-      background-image: url("img/banner/b2.jpg");
+      background-image: url("images/bennar/b2.jpg");
   height: 20rem;
   background-size: cover;
   justify-content: center;
@@ -541,7 +543,7 @@ cursor: pointer;
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-      background-image: url("img/banner/1.jpg");
+      background-image: url("images/bennar/1.jpg");
 
    height: 20rem;
    padding: 5% 2rem;
@@ -1248,7 +1250,6 @@ flex-wrap: wrap;
     }
     
 .header{
-    min-width: 3rem;
 }
   
 .header  .navbar-big a{
@@ -1287,10 +1288,9 @@ content: '';
   width: 0;
   height: 0rem;
   position: absolute;
-  background:fff;
   left:0;
   color:white;
-  bottom: -.5rem;
+  bottom: 1rem;
   transition: 0.5s;
 }
 
