@@ -431,6 +431,7 @@ margin-top:0;
 
 .benner{
   width: 100%;
+  z-index: -1;
   position: relative;
   text-align: center;
   background-image: url("images/bennar/b2.jpg");
