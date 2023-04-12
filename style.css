@@ -128,6 +128,10 @@ nav a:hover::after , nav a.active::after{
 }
 
 
+.form input ,.d-flex .btn{
+
+}
+
 
  header .search{
   display: flex;
@@ -147,7 +151,7 @@ cursor: pointer;
   height:0;
   align-items: center;
   background: #fff;
-  padding:0 3rem;
+  padding:0 rem;
   left:0%;
   top:-100%;
   transition: 0.5s ease-in-out;
@@ -168,7 +172,7 @@ cursor: pointer;
 
 /*------------sider page css-----------*/
 .home  .swiper .swiper-wrapper .swiper-slide img{
-  margin-top: 0;
+  margin-top: 8.5rem;
 }
 .hero{
   margin-bottom: 2rem;
@@ -571,8 +575,12 @@ cursor: pointer;
   
 }
 
- .news .sing-in .btn{
+ .news .sing-in button{
       padding: 1rem;
+      background: #2FDEC2;
+
+      border: none;
+      color:#eee;
 
  }
 
@@ -682,6 +690,15 @@ color: #eee;
   background: #2B9D8B;
 
 }
+
+.single-product .single-product-main .single-product-detile p{
+  text-align: left;
+  margin-top: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #777;
+}
+
 
 /*------------home page css------------*/
 
@@ -1375,10 +1392,7 @@ margin-top:0;
     width:100%;
     display: block;
   }
-.d-flex .form-control ,.d-flex button{
-      display: block;
 
-}
  .swiper .swiper-slide .button
  {
    position: absolute;
