@@ -111,7 +111,7 @@ content: '';
   background:#333;
   left:0;
   color:white;
-  bottom: .5rem;
+  bottom: rem;
   transition: 0.5s;
 }
 
@@ -253,6 +253,8 @@ cursor: pointer;
   }
   
   
+
+  
   .product{
     margin-top:2rem;
     margin-bottom: 2rem;
@@ -290,6 +292,7 @@ cursor: pointer;
 
   .product-main .pro-item .img img{
     width:28rem;
+    margin-top: 0;
     height: 31.5rem;
   }
   
@@ -335,7 +338,7 @@ cursor: pointer;
           margin-left: 1.2rem;
                }
 
-
+*/
 
 .benner{
   width: 100%;
@@ -571,7 +574,7 @@ cursor: pointer;
   border: none;
   outline: none;
   color:#333;
-     height: 5rem;
+     height: 3rem;
 
   padding: 0rem;
   display:flex;
@@ -595,7 +598,7 @@ cursor: pointer;
  .news .sing-in button{
       padding: 1rem;
       background: #2FDEC2;
-
+     width: 7rem;
       border: none;
       color:#eee;
 
@@ -1309,6 +1312,8 @@ flex-wrap: wrap;
   display:flex;
   z-index: 1;
   text-align: center;
+    display:inline-block;
+
     flex-direction: column;
 
 }
@@ -1332,7 +1337,7 @@ content: '';
   position: absolute;
   left:0;
   color:white;
-  bottom: 1rem;
+  top: 0rem;
   transition: 0.5s;
 }
 
