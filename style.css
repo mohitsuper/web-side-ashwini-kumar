@@ -92,6 +92,7 @@ position: relative;
 nav{
   display:flex;
   gap:3rem;
+  height: 3rem;
   font-size: 1.5rem;
 
 }
@@ -110,7 +111,7 @@ content: '';
   background:#333;
   left:0;
   color:white;
-  bottom: 5rem;
+  bottom: .5rem;
   transition: 0.5s;
 }
 
@@ -127,13 +128,13 @@ nav a:hover::after , nav a.active::after{
 
 }
 
-
-.form input ,.d-flex .btn{
-
+.form{
+  height: 5rem;
 }
 
 
- header .search{
+
+ /*header .search{
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -168,7 +169,7 @@ cursor: pointer;
   color:#000;
   background: #fff;
   border-bottom: 1px solid #333;
-}
+}*/
 
 /*------------sider page css-----------*/
 .home  .swiper .swiper-wrapper .swiper-slide img{
@@ -557,8 +558,8 @@ cursor: pointer;
  
  .news .new{
    color: #fff;
+      line-height: 3.5rem;
    font-size: 2.5rem;
-   line-height: 3.5rem;
  }
  
   .news .new h1{
@@ -566,13 +567,30 @@ cursor: pointer;
 
     font-weight: 300;
   }
-.news .sing-in input{
+.news .sing-in {
   border: none;
   outline: none;
   color:#333;
-  background: #fff;
+     height: 5rem;
+
+  padding: 0rem;
+  display:flex;
+  flex-direction: row;
+  gap:.5rem;
   
 }
+
+.news .sing-in input{
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  color:#333;
+  display:flex;
+  flex-direction: row;
+  gap:.5rem;
+  
+}
+
 
  .news .sing-in button{
       padding: 1rem;
@@ -663,23 +681,22 @@ line-height: 3.5rem;
   margin-bottom: 1rem;
 }
 
-.single-product .single-product-main .single-product-detile select{
+.single-product .single-product-main .single-product-detile .number select{
   padding: 1rem;
   margin: 1rem 1.5rem 0rem  0rem;
   width: 30%;
   background: transparent;
   outline: none;
 }
-.single-product .single-product-main .single-product-detile input {
+.single-product .single-product-main .single-product-detile .number input {
   margin-top: 1rem;
-  width: 20%;
+  width: 30%;
   outline: none;
   border: none;
   box-shadow: 0rem 0rem .1rem .1rem #777;
 }
 
 .single-product .single-product-main .single-product-detile .button{
-  width: 40%;
   padding: 0rem;
   border-radius: 1rem;
     margin-top: 1rem;
@@ -970,11 +987,13 @@ border: none;
   outline: none;
   border: none;
 }
+
+
 .contact  form span{
   font-size:1.6rem;
   color:var(--black);
 }
-
+/*
 .contact form .radio{
 margin-top: 2rem;}
 
@@ -998,7 +1017,7 @@ color: var(--green);
 cursor: pointer;
   
 }
-
+*/
  .contact .row{
   position: relative;
 }
