@@ -325,7 +325,7 @@ cursor: pointer;
          padding: 1rem;
          position: relative;
          bottom: 0rem;
-         margin-left: 80%;
+         margin-left: 85%;
          margin-bottom: 5rem;
        }
        
@@ -571,7 +571,6 @@ cursor: pointer;
   outline: none;
   color:#333;
   background: #fff;
-  padding: 1rem;
   
 }
 
@@ -668,13 +667,15 @@ line-height: 3.5rem;
   padding: 1rem;
   margin: 1rem 1.5rem 0rem  0rem;
   width: 30%;
+  background: transparent;
   outline: none;
 }
 .single-product .single-product-main .single-product-detile input {
-  padding: 1rem;
   margin-top: 1rem;
-  width: 30%;
+  width: 20%;
   outline: none;
+  border: none;
+  box-shadow: 0rem 0rem .1rem .1rem #777;
 }
 
 .single-product .single-product-main .single-product-detile .button{
@@ -898,7 +899,7 @@ margin-top:0;
   font-size: 1.6rem;
 }
 
-.shop .swiper .swiper-wrapper .swiper-slide  button{
+.shop .swiper .swiper-wrapper .swiper-slide  .button{
   bottom: 1rem;
   left:16rem;
     text-decoration:none;
