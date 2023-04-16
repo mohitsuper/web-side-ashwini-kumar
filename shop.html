@@ -25,11 +25,11 @@
   <link rel="stylesheet" href="style_sheet.css">
   
   <style>
-  .main {
+  /*.main {
     position: relative;
   }
-  
-  .benner {
+  */
+  .home{
     width: 100%;
     z-index: -1;
     position: relative;
@@ -38,32 +38,61 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
-  background-image: url("img/banner.jpg");
-  
+padding-top: 8.5rem;
   }
 
-
+.product .heading{
+  margin-top:10rem;
+}
 
   </style>
 
 </head>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
-  <section class="main" id="main">
+  
+    <section class="main" id="main">
     <header>
-       
-           <h1 class="logo">Aswini Kumar.</h1>
+       <h1 class="logo">Aswini Kumar.</h1>
+
       <nav class="navbar-big" id="sidemenu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-       <a href="shop.html" class="acrive">shop</a>
-        <a href="#service">Service</a>
+       <a href="shop.html" class="active">shop</a>
+        <a href="blog.html">blogs</a>
         <a href="video.html">Video</a>
-        <a href="#contect">Contect</a>
+        <a href="contect.html">Contect</a>
         
-            <form class="d-flex" class="form" role="search">
+
+        
+      <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <a class="btn btn-outline-success" type="submit">Search</a>
+      <button class="btn btn-outline-success" type="submit">search</button>
     </form>
 
       <ion-icon name="close-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
@@ -72,13 +101,14 @@
     
     <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
 
-
     
     </header>
   </section>
+
   <!----------hero page html------------>
-      <section class="benner" width="100%">
-  
+
+  <section class="h" width="100%">
+  <img src="img/banner.jpg" alt="img/IMG1.JPG">
 </section>
 
   

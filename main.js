@@ -15,6 +15,8 @@ var sidemeu = document.getElementById('sidemenu');
   }
   
   var mainImg = document.getElementById('mainImg');
+  
+  
 
 var smallimg = document.getElementsByClassName('sallImg');
   
@@ -24,7 +26,7 @@ var smallimg = document.getElementsByClassName('sallImg');
     
   }
   
-  
+
     smallimg[1].onclick = function() {
       mainImg.src = smallimg[1].src;
     }  
