@@ -514,6 +514,31 @@ cursor: pointer;
   
 }
 
+.pagination{
+  margin:2rem 0rem 2rem 0rem;
+  text-align: center;
+    gap:1rem;
+
+  padding: 3rem;
+  padding-left: 42%;
+}
+
+.pagination a{
+  background: #2FDEC2;
+  padding: 2rem;
+  width: 7rem;
+  color: #eee;
+  font-size: 2.5rem;
+  text-decoration: none;
+  
+}
+
+.pagination a:hover{
+  background: #2B9D8B;
+}
+
+
+
 
 .singin{
   width: 100%;
@@ -730,36 +755,49 @@ color: #eee;
 }
 
 
-/*.blogs{
+.blogs{
   margin:2rem 0rem 2rem 0rem ;
+  padding-top: 8.5rem;
 }
 
  
-.blogs .blog-box{
+.blog-box{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap:.8rem;
 }
 
-.blogs .blog-box .blog-main{
+ .blog-box .blog-main{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  gap:1rem;
 }
 
-.blogs .blog-box .blog-main .blog-img{
-  display: flex;
-  flex:1 1 40rem;
+ .blog-main{
+   padding: 1rem;
+ }
+
+
+.blog-box .blog-main .blog-img{
+  flex-basis: 40%;
 }
 
-.blogs .blog-box .blog-main .blog-content{
-  display: flex;
-  flex: 1 1 40rem;
-}*/
+.blog-box .blog-main .blog-img img {
+  width: 100%;
+}
+ .blog-box .blog-main .blog-content{
+   flex-basis: 50%;
+}
 
+ .blog-box .blog-main .blog-content h1{
+   font-size: 3rem;
+   font-weight: 700;
+   color:#333;
+ }
 
-.blogs{
+/*.blogs{
       margin-top: 2.5rem;
      margin-bottom: 2.5rem;
 }
@@ -801,7 +839,7 @@ color: #eee;
   border-radius: 10%;
 
 }*/
- .blog-box .blog-main .blog-img img:hover {
+/* .blog-box .blog-main .blog-img img:hover {
 
 
  }
@@ -823,6 +861,8 @@ color: #eee;
   font-size: 1.8rem;
   color:var(--light-white);
 }
+
+*/
 /*------------home page css------------*/
 
 .shop .swiper-pagination{
@@ -931,7 +971,7 @@ margin-top:0;
     position: relative;
     text-align: center;
     height: 25rem;
-    padding-bottom: 2.5rem;
+    margin-bottom: 10rem;
     width:100%;
     background-size: cover;
     justify-content: center;
@@ -1422,6 +1462,7 @@ cursor: pointer;
 }
   
 .header  .navbar-big a{
+  
   display:inline-block;
   margin: 2rem;
 }
@@ -1442,11 +1483,14 @@ cursor: pointer;
 
 }
 
+
+
 .navbar-big{
   width:50% ;
   height: 100vh;
   background:#fff;
   top:0;
+  
   right:-30rem;
   position: fixed;
   padding-top:5rem;
