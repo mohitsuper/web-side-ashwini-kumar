@@ -518,9 +518,10 @@ cursor: pointer;
   margin:2rem 0rem 2rem 0rem;
   text-align: center;
     gap:1rem;
-
+    justify-content: center;
+    align-items: center;
+    display: flex;
   padding: 3rem;
-  padding-left: 42%;
 }
 
 .pagination a{
@@ -645,6 +646,7 @@ cursor: pointer;
 .single-product .single-product-main{
   display: flex;
   width: 100%;
+  padding: 1rem;
       gap:1rem;
   flex-wrap: wrap;
 align-items: center;
@@ -952,11 +954,19 @@ width:100%;
 }
 
 
-.explor .explors {
+.explor .swiper {
   flex:1 1 80rem;
   width: 100%;
 }
-.explor .explors .swiper-slide img{
+
+.explor  .swiper{
+  
+    width: 100%;
+
+}
+
+
+.explor  .swiper .swiper-wrapper .swiper-slide img{
   border-radius: 30%;
   position: relative;
   border:none;
@@ -967,16 +977,16 @@ margin-top:0;
 }
 
   .h{
+    padding-top: 8.5rem;
+
     z-index: -1;
     position: relative;
     text-align: center;
     height: 25rem;
-    margin-bottom: 10rem;
     width:100%;
     background-size: cover;
     justify-content: center;
     align-items: center;
-padding-top: 8.5rem;
   }
   
   .h img{
@@ -986,7 +996,6 @@ padding-top: 8.5rem;
 
 /*------------about page css-----------*/
 .about{
-  padding-top: 8.5rem;
      margin-bottom: 2.5rem;
 }
 .about .row{
@@ -1554,15 +1563,40 @@ nav a:hover{
     flex-wrap: wrap;
   }
   
-  .explor .explors .swiper-slide img{
+  
+  .explor .swiper {
+  flex:1 1 80rem;
+  width: 100%;
+}
+
+.explor  .swiper{
+    width: 100%;
+
+}
+
+.explor  .swiper .swiper-wrapper{
+      width: 100%;
+
+}
+.explor .swiper .swiper-wrapper .swiper-slide{
+    width: 100%;
+
+}
+
+
+.explor  .swiper .swiper-wrapper .swiper-slide img{
   border-radius: 30%;
   position: relative;
   border:none;
-  height:50rem;
-  width: 50rem;
+  /*height:8rem;
+  width: 8rem;*/
+  width: 100%;
 margin-top:0;
 
 }
+
+  
+
   .logo {
     display: inline-block;
   }
