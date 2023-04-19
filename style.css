@@ -783,19 +783,24 @@ color: #eee;
 
 
 .blog-box .blog-main .blog-img{
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 
 .blog-box .blog-main .blog-img img {
   width: 100%;
 }
  .blog-box .blog-main .blog-content{
-   flex-basis: 50%;
+   flex-basis: 40%;
+   justify-content: center;
+   display: flex;
+   gap:2rem;
+   flex-direction: column;
+   
 }
 
  .blog-box .blog-main .blog-content h1{
    font-size: 3rem;
-   font-weight: 700;
+   font-weight: 400;
    color:#333;
  }
 
@@ -1399,7 +1404,7 @@ cursor: pointer;
 }
 
 
-.navbar{
+/*.navbar{
   display: none;
   margin-top:0;
   margin-bottom: 0;
@@ -1423,7 +1428,7 @@ cursor: pointer;
 
 .navbar .container{
   box-shadow: 0rem 0rem 1rem .1rem #333;
-}
+}*/
 
 /*----------the end-------------------*/
 
@@ -1467,22 +1472,19 @@ cursor: pointer;
 
     }
     
-.header{
-}
   
-.header  .navbar-big a{
-  
+  nav a{
+  width:100%;
   display:inline-block;
-  margin: 2rem;
+    margin: 1rem;
+
 }
 
-.header  .navbar-big.active{
-  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
-}
+
 /**-----             ----------/--*/
   
 
-.navbar-big{
+nav{
   display:flex;
   z-index: 1;
   text-align: center;
@@ -1588,8 +1590,7 @@ nav a:hover{
   border-radius: 30%;
   position: relative;
   border:none;
-  /*height:8rem;
-  width: 8rem;*/
+  height:18rem;
   width: 100%;
 margin-top:0;
 
