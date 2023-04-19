@@ -276,120 +276,27 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<script>    
-var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 5,
-       autoplay: {
-          delay: 2500,
-          direction: 'vertical',
-          disableOnInteraction: false,
-          loop:true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
-<script>
-      var swiper = new Swiper(".explors", {
-        
-        spaceBetween: 0,
-      autoplay: {
-       delay: 500,
-      disableOnInteraction:false,
-        loop: true,
-      
-        },
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:3,
-            
-          },
-          768: {
-            slidesPerView: 5,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
-    
-    
-    <script>
-      var win;
-    
-      function isha() {
-        win = window.open('https://youtube.com/@ishafoundation', width = '500px', height = "500px");
-      }
-      
-      function ishamusic()
-      {
-       win = window.open('https://youtube.com/@soundsofisha', width = '500px', height = "500px");
-
-      }
-      
-        
-      
-      function indianmadical()
-      {
-       win = window.open('https://youtube.com/@theyogainstituteofficial', width = '500px', height = "500px");
-
-      }
-      
-    function panjali(){
-   win = window.open('https://youtube.com/@SwamiRamdevOfficial', width = '500px', height = "500px");
-    }
- 
-    </script>
-    
 
 
 <script>
-      var swiper = new Swiper(".reviews", {
-        
-        spaceBetween: 30,
-      autoplay: {
-       delay: 3000,
-      disableOnInteraction:false,
-        loop: true,
-      
-        },
-        
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:1,
-            
-          },
-          768: {
-            slidesPerView: 2,
-            
-          },
-          1024: {
-            slidesPerView: 5,
+  var smallimg = document.getElementsByClassName('sallImg');
+  
+  
+  smallimg[0].onclick = function(){
+  mainImg.src = smallimg[0].src;
+    
+  }
+  
 
-          },
-        },
-      });
-    </script>
+    smallimg[1].onclick = function() {
+      mainImg.src = smallimg[1].src;
+    }  
+    smallimg[2].onclick = function() {
+        mainImg.src = smallimg[2].src;
+      } 
+      smallimg[3].onclick = function() {
+          mainImg.src = smallimg[3].src;
+        }
 
+</script>
 </html>

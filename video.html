@@ -26,6 +26,7 @@
       padding:10px;
     }
     .video{
+       margin-top:;
       display: grid;
       height: 500px;
       padding: 15px;
@@ -68,7 +69,7 @@
           border: 1px solid #333;
         }
 
-    .video .row-video .row-item .iframe iframe{
+    .video .row-video .row-item .iframe class="samllvideo" iframe{
       width:100%;
             height: 150px;
             
@@ -83,14 +84,45 @@
 }
 }
   </style>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  
+    <section class="main" id="main">
+    <header>
+       
+           <h1 class="logo">Aswini Kumar.</h1>
+      <nav class="navbar-big" id="sidemenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+       <a href="shop.html" >shop</a>
+        <a href="blog.html" class="active">blog</a>
+        <a href="video.html">Video</a>
+        <a href="#contect">Contect</a>
+        
+            <form class="d-flex" class="form" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <a class="btn btn-outline-success" type="submit">Search</a>
+    </form>
+
+      <ion-icon name="close-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
+
+      </nav>
+    
+    <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
+
+
+    
+    </header>
+  </section>
+
  <section id="video" class="video">
   
   
   <div class="main-video">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/eeOrjmplbWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="mainImg"></iframe>
+    <iframe class="Mainvideo" width="100%" height="500" src="https://www.youtube.com/embed/eeOrjmplbWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
     
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -101,7 +133,7 @@
     
     <div class="row-item">
     <div class="iframe" >
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Fh53p0Tnnxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="sallImg"></iframe>
+      <iframe class="samllvideo" class="samllvideo" width="560" height="315" src="https://www.youtube.com/embed/Fh53p0Tnnxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -109,7 +141,7 @@
    </div>
        <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -117,7 +149,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -125,7 +157,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://youtu.be/YKMviuNeJ_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://youtu.be/YKMviuNeJ_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -133,7 +165,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -141,7 +173,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -149,7 +181,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -157,7 +189,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -165,7 +197,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -173,7 +205,7 @@
    </div>
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -182,7 +214,7 @@
    
     <div class="row-item">
     <div class="iframe">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="heading">
       <p> 1. the is a heading</p>
@@ -191,4 +223,28 @@
   </div>
   
  </section>
+ 
+</body>
+
+<script>
+  var smallimg = document.getElementsByClassName('samllvideo');
+  
+  
+  smallimg[0].onclick = function(){
+  Mainvideo.src = smallimg[0].src;
+    
+  }
+  
+
+    smallimg[1].onclick = function() {
+     /* Mainvideo.src = smallimg[1].src;*/
+    }  
+    smallimg[2].onclick = function() {
+        Mainvideo.src = smallimg[2].src;
+      } 
+      smallimg[3].onclick = function() {
+          Mainvideo.src = smallimg[3].src;
+        }
+
+</script>
 </html>
