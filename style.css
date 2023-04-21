@@ -758,7 +758,6 @@ color: #eee;
 
 
 .blogs{
-  margin:2rem 0rem 2rem 0rem ;
   padding-top: 8.5rem;
 }
 
@@ -788,12 +787,15 @@ color: #eee;
 
 .blog-box .blog-main .blog-img img {
   width: 100%;
+  object-fit: center;
+  height: fit-content;
 }
  .blog-box .blog-main .blog-content{
    flex-basis: 40%;
    justify-content: center;
    display: flex;
    gap:2rem;
+padding-right: 5rem;
    flex-direction: column;
    
 }
@@ -803,6 +805,13 @@ color: #eee;
    font-weight: 400;
    color:#333;
  }
+ 
+  .blog-box .blog-main .blog-content p{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#555;
+  }
+
 
 /*.blogs{
       margin-top: 2.5rem;
