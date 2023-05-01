@@ -1621,8 +1621,8 @@ margin-top:0;
     }
     .product-main .pro-item {
   
-      height: fit-content;
-      width: 90%;
+      height:30rem;
+      width: 30rem;
       background: #fff;
       padding: 1rem;
       box-shadow: 0rem 0rem 0.5rem .1rem #ccc;
