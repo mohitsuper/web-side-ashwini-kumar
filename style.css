@@ -278,8 +278,7 @@ cursor: pointer;
      width:100%;
      flex-wrap: wrap;
      gap:1rem;
-     align-items: center;
-     justify-content:center;
+     
      
    }
   .product-main .pro-item{
