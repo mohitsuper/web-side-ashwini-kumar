@@ -1,9 +1,10 @@
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap');
 
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'popiens',sans-serif;
+  font-family: 'Geologica', sans-serif;
   text-decoration:none;
   transition: 0.2s;
   border-radius: .5rem;
@@ -349,7 +350,7 @@ height: 100%;
           margin-left: 1.2rem;
                }
 
-*/
+
 
 .benner{
   width: 100%;
