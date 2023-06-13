@@ -448,7 +448,7 @@ height: 100%;
   background: transparent;
   cursor: pointer;
     padding:1rem 2rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
  transition: 0.5s background,0.5s color,0.5s box-shadow;
    text-decoration:none;
@@ -613,7 +613,6 @@ height: 100%;
   outline: none;
   color:#333;
      height: 3rem;
-
   padding: 0rem;
   display:flex;
   flex-direction: row;
@@ -629,15 +628,21 @@ height: 100%;
   display:flex;
   flex-direction: row;
   gap:.5rem;
-  
+ font-size: 1rem;
+
 }
 
 
  .news .sing-in button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
       padding: 1rem;
       background: #2FDEC2;
      width: 7rem;
       border: none;
+        font-size: 1rem;
+
       color:#eee;
 
  }
@@ -933,7 +938,7 @@ padding-right: 5rem;
   cursor: pointer;
   color:black;
     padding:1rem 2rem;
-  font-size: 1.8rem;
+  font-size: 1rem;
   text-align: center;
   border :1px solid black;
  transition: 0.5s background,0.5s color,0.5s box-shadow;
