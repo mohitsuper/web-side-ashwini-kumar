@@ -1363,29 +1363,28 @@ font-size: 1.5rem;
 color:var(--red);}
 /*------------feture page css ------*/
 .fetures {
-  display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(40rem,5fr));
+  margin:2rem 0rem 2rem 0rem;
     width:100%;
 
 }
 
 
-
+.feture{
+  width:100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) auto;
+}
 /*.fetures{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-}
-
-.fetures .cantener{
-  width:100%;
 }*/
 
 .fetures .cantener{
-      margin: 1rem;
-      overflow: hidden;
-cursor: pointer;
+  width:100%;
+
 }
+
 
 .fetures .cantener img{
     width:100%;
