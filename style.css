@@ -1025,6 +1025,58 @@ margin-top:0;
   }
 
 /*------------about page css-----------*/
+
+/*----product section page css------*/
+.product-section{
+    margin:2rem 0rem 2rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+width:100%;
+}
+
+.product-section .pro-main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 15rem 15rem;
+  grid-gap:1rem;
+}
+.product-section .pro-main .item{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  width:100%;
+  overflow: hidden;
+  height: 100%;
+  
+}
+.product-section .pro-main .item img{
+    width:100%;
+      height: 100%;
+display: flex;
+animation:  zoom 3s alternate infinite;
+}
+@keyframes zoom{
+  to{
+    transform: scale(1.2);
+  }
+  form{
+    transform: scale(1);
+
+  }
+}
+.product-section .pro-main .item h1{
+  display: flex;
+background: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color:#333;
+  
+}
+
+
+/*--product section page css end ----*/
+
 .about{
      margin-bottom: 2.5rem;
 }
