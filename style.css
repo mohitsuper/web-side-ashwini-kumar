@@ -1045,9 +1045,9 @@ width:100%;
   grid-gap:1rem;
 }
 .product-section .pro-main .item{
-  align-items: center;
-  text-align: center;
+  position: relative;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   background: #eee;
   width:100%;
@@ -1057,10 +1057,23 @@ width:100%;
 .product-section .pro-main .item .col-1{
   height: 100%;
     width:100%;
-  position: relative;
-  overflow: hidden;
+  position: absolute;
   display: flex;
 }
+
+.product-section .pro-main .item:hover h1{
+  font-size: 1.5rem;
+  color: #fff;
+  width:100%;
+  background: #11111396;  
+  padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    font-weight: 700;
+    text-align: center;
+}
+
 
 .product-section .pro-main .item .col-1 img{
   filter: brightness(0.8);
@@ -1077,14 +1090,7 @@ animation:  zom 3s alternate infinite;
 
 
 .product-section .pro-main .item h1{
-  position: absolute;
-  bottom: 0;
-  left:50%;
-  z-index: 10;
-  font-size: 1rem;
-  font-weight: 700;
-  color:#333;
-  
+
 }
 
 
