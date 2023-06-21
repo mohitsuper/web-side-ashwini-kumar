@@ -474,35 +474,6 @@ height: 100%;
   color: #000;
 }
 
-.fetures{
-  width:100%;
-    display:flex;
-    flex-direction: column;
-
-}
-
-.fetures .fe-main{
-  width: 100%;
-    display:flex;
-    flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap:2rem;
-}
-
-.fetures .fe-main .fe-item{
-  background-image: url("img/banner/b17.jpg");
-  background-size: cover;
-  background-repeat: none;
-  height: 25rem;
-  width: 100%;
-    justify-content: flex-start;
-    font-size: 1.5rem;
-    color:#eee;
-    padding: 5rem 0rem 0rem 2rem;
-    
-
-}
 
  .button-blue{
   padding: 1rem;
@@ -1391,8 +1362,11 @@ color:var(--red);}
 .feture{
   width:100%;
     display: grid;
-    grid-template-columns:repeat(3, 1fr) auto;
+    grid-gap: 1rem 1rem;
+    grid-template-columns:repeat(3, 1fr);
 }
+
+
 /*.fetures{
 display: flex;
 flex-direction: row;
@@ -1401,12 +1375,16 @@ flex-wrap: wrap;
 
 .fetures .cantener{
 overflow: hidden;
-}
+    border-radius: 2rem;
 
+}
+ .f-span{
+  display: grid;
+  grid-column: span 2;
+}
 
 .fetures .cantener img{
     width:100%;
-    border-radius: 2rem;
     height: 29.6rem;
           overflow: hidden;
 
