@@ -489,6 +489,8 @@ height: 100%;
  }
 
 
+
+
 .fetures .fe-main .fe-item p{
   font-size: 1.8rem;
   margin-bottom: .8rem;
@@ -1352,8 +1354,68 @@ font-size: 1.5rem;
 .footer .share h4 span{
 color:var(--red);}
 /*------------feture page css ------*/
+
+  .text-btu{
+      font-family: 'League Spartan', sans-serif;
+
+    z-index: 1;
+    text-transform:  capitalize;
+    font-size: 10px;
+    position: relative;
+    top:30px;
+    text-align: left;
+    left:4px;
+    height: 50%;
+    width: 50%;
+    color: #F4F4F4DE;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  
+  .text-btu h1{
+    text-transform: uppercase;
+        font-size: 2.5rem;
+    font-weight: 800;
+        margin:5px;
+
+    
+
+  }
+  .text-btu h3{
+ margin:0px 0px 5px 5px;
+    color: #eee;
+  font-weight: 700;
+  
+        font-size: 1.5rem;
+
+  }
+
+   .btu {
+     color: #333;
+     border: none;
+     font-size: 1rem;
+     font-weight:800;
+     background: #fff;
+     border-radius: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: .8rem;
+     width:50%;
+   }
+
+.btu:hover{
+  border: .2rem solid #fff;
+  background: transparent;
+  color: #fff;
+  
+}
+
+
+
 .fetures {
-  margin:2rem 0rem 2rem 0rem;
+  margin:2rem 1rem 2rem 0rem;
     width:100%;
 
 }
@@ -1361,12 +1423,25 @@ color:var(--red);}
 
 .feture{
   width:100%;
-    display: grid;
-    grid-gap: 1rem 1rem;
-    grid-template-columns:repeat(3, 1fr);
+display: flex;
+flex-direction: columns ;
+gap:1rem;
+flex-wrap: wrap;
+
 }
+.feture .row-1{
+  width:100%;
+  gap:1rem;
 
-
+  flex-direction: row;
+  display: flex;
+}
+.feture .row-2{
+    width:100%;
+grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 /*.fetures{
 display: flex;
 flex-direction: row;
@@ -1376,6 +1451,8 @@ flex-wrap: wrap;
 .fetures .cantener{
 overflow: hidden;
     border-radius: 2rem;
+    position: relative;
+
 
 }
  .f-span{
@@ -1386,9 +1463,17 @@ overflow: hidden;
 .fetures .cantener img{
     width:100%;
     height: 29.6rem;
-          overflow: hidden;
 
 }
+
+.fetures  .cantener .text-btu{
+  position: absolute;
+  z-index: 10;
+}
+
+
+
+
 .fetures .cantener:hover img{
   transform: scale(1.2) rotate(7deg);
 
