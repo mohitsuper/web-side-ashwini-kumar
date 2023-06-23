@@ -351,10 +351,17 @@ height: 100%;
 
 
 .benner-1{
-  background: url("images/bennar/d1.jpg");
+  background: url("images/bennar/y3.jpg");
+}
+
+.benner-2 {
+  background: url("images/bennar/y2.jpg");
+}
+
+.benner-3{
+  background: url("images/bennar/y4.jpg");
 }
   .benner{
-      background: url("images/bennar/b2.jpg");
 
   width: 100%;
   z-index: -1;
@@ -569,7 +576,7 @@ height: 100%;
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-      background-image: url("images/bennar/1.jpg");
+      background-image: url("images/bennar/y1.jpg");
 
    height: 20rem;
    padding: 5% 2rem;
@@ -752,15 +759,18 @@ color: #eee;
 
 
 .blogs{
-  padding-top: 8.5rem;
+  margin:2rem 0rem 2rem 0rem;
+  width:100%;
 }
 
  
-.blog-box{
+.blogs .blog-box{
   display: flex;
+  background: red;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap:.8rem;
 }
 
  .blog-box .blog-main{
@@ -781,27 +791,28 @@ color: #eee;
 
 .blog-box .blog-main .blog-img img {
   width: 100%;
-  object-fit: center;
-  height: fit-content;
+  position: center;
+  height: 70%;
 }
- .blog-box .blog-main .blog-content{
+.blogs .blog-box .blog-main .blog-content{
    flex-basis: 40%;
+   
+   background: #000;
    justify-content: center;
    display: flex;
    gap:2rem;
-padding-right: 5rem;
    flex-direction: column;
    
 }
 
  .blog-box .blog-main .blog-content h1{
-   font-size: 3rem;
+   font-size: 2.5rem;
    font-weight: 400;
    color:#333;
  }
  
   .blog-box .blog-main .blog-content p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color:#555;
   }
@@ -986,15 +997,10 @@ margin-top:0;
 
   .h{
     padding-top: 8.5rem;
-
-    z-index: -1;
-    position: relative;
-    text-align: center;
+  margin-bottom: 2rem;
     height: 25rem;
     width:100%;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
   }
   
   .h img{
@@ -1837,6 +1843,9 @@ margin-top:0;
   display: block;
 }
 
+ .blog-box .blog-main{
+   flex-direction: column;
+ }
 
 
 
