@@ -1374,8 +1374,7 @@ color:var(--red);}
   }
   
   .text-btu h1{
-    text-transform: uppercase;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     font-weight: 800;
         margin:5px;
 
@@ -1469,7 +1468,18 @@ overflow: hidden;
 .fetures  .cantener .text-btu{
   position: absolute;
   z-index: 10;
+  top:10%;
 }
+
+.fetures  .row-2 .cantener .text-btu{
+    top:20%;
+
+}
+
+.fetures  .row-2 .cantener .text-btu h3{
+  color: var(--red);
+}
+
 
 
 
