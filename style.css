@@ -1260,7 +1260,10 @@ font-size: 1.5rem;
 .review .silds-review{
   width:35rem;
  border-radius: .5rem; 
- background: var(--dg-white);
+ background: url("img/review_bg.jpg") no-repeat;
+ background-size: cover;
+ background-position: center;
+ box-shadow: 0rem 0rem 1rem .1rem #ddd;
  font-style: 1.6rem;
  padding: 2rem;
  margin-bottom: 1rem;
@@ -1273,7 +1276,8 @@ font-size: 1.5rem;
 }
 .review .silds-review .user {
   display: flex;
-  align-items: center;
+    background-size: cover;
+background-position: center;
   gap:1.5rem;
 }
 
@@ -1281,7 +1285,7 @@ font-size: 1.5rem;
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  object-fit: cover;
+  background-size: cover;
   transform: scale(1.2);
   background-position:center;
 }
@@ -1294,7 +1298,9 @@ font-size: 1.5rem;
 }
   .review .silds-review .user .stra  ion-icon{
     color:#DBE446;
-    font-size: 3rem;}
+    font-size: 3rem;
+    
+  }
 
 
 
@@ -1810,7 +1816,15 @@ margin-top:0;
  .blog-box .blog-main{
    flex-direction: column;
  }
+.feture{
+  flex-direction: column-reverse;
+}
+.feture .row-2{
+  grid-template-columns:repeat(2,1fr);
+}
 
-
+.feture .row-2 .cantener:nth-child(3){
+  grid-column: span 2;
+}
 
 }
