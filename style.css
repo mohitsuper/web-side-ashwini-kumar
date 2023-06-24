@@ -368,6 +368,7 @@ height: 100%;
   text-align: center;
   height: 25rem;
   background-size: cover;
+  background-position: center;
   justify-content: center;
   align-items: center;
 
@@ -408,46 +409,6 @@ height: 100%;
   color:var(--red);
 }
 
-
-.benner1{
-  width: 100%;
-  text-align: center;
-      background-image: url("img/banner/b1.jpg");
-  height: 25rem;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-
-}
-.benner1 {
-  position: relative;
-  width: 100%;
-
-}
-
-.benner1  .cantener{
-  text-align: center;
-  top:20%;
-  color:#fff;
-  z-index: 10;
-  width: 100%;
-  position: absolute;
-  line-height: 5rem;
-}
-
-
-.benner1  .cantener h2{
-  color:#fff;
-  font-size: 3rem;
-  margin-bottom: .8rem;
-  font-weight: 100;
-
-}
-.benner1 .cantener h1{
-  font-size: 3.5rem;
-  font-weight: 500;
-  color:#eee;
-}
 
 .benner .cantener h1 span{
   color:var(--red);
@@ -577,7 +538,9 @@ height: 100%;
    justify-content: space-around;
    flex-wrap: wrap;
       background-image: url("images/bennar/y1.jpg");
-
+      filter: brightness(0.9);
+background-position: center;
+background-size: cover;
    height: 20rem;
    padding: 5% 2rem;
  }
@@ -586,6 +549,7 @@ height: 100%;
    color: #fff;
       line-height: 3.5rem;
    font-size: 2.5rem;
+
  }
  
   .news .new h1{
