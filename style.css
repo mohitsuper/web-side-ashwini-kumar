@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Geologica', sans-serif;
   text-decoration:none;
-  transition: 0.2s;
   border-radius: .5rem;
     text-transform: capitalize;
 
@@ -125,6 +124,7 @@ content: '';
 
 /*------*/
 nav a:hover::after , nav a.active::after{
+  width:100%;
   font-weight: 500;
 }
 #menu-btu{
@@ -352,7 +352,9 @@ height: 100%;
 
 .benner-1{
   background: url("images/bennar/y3.jpg");
+  transition: 0.5s;
 }
+
 
 .benner-2 {
   background: url("images/bennar/y2.jpg");
@@ -413,33 +415,33 @@ height: 100%;
 .benner .cantener h1 span{
   color:var(--red);
 }
+
+
 .button-white{
   display: inline-block;
   margin-top:1rem;
   border-radius: 3rem;
   width:14rem;
-  background: transparent;
+  background: white;
   cursor: pointer;
     padding:1rem 2rem;
   font-size: 1.5rem;
   text-align: center;
  transition: 0.5s background,0.5s color,0.5s box-shadow;
    text-decoration:none;
-  color:var(--dg-white);
   border: 1px solid var(--dg-white);
 }
 
  .button-white {
-  color: var(--dg-white);
-  border-radius: 1.8rem;
+   background:#fff;
+  color: var(--black);
   border: 1px solid var(--dg-white);
 }
 
 
- .button-white:hover {
-  box-shadow: none;
-  background: #eee;
-  color: #000;
+ .button-white:hover{
+  background: transparent;
+  color: #fff;
 }
 
 
@@ -470,6 +472,7 @@ height: 100%;
   text-transform: capitalize;
   
 }
+
 
 .pagination{
   margin:2rem 0rem 2rem 0rem;
@@ -729,6 +732,7 @@ color: #eee;
 
  
 .blogs .blog-box{
+  width: 
   display: flex;
   background: red;
   justify-content: center;
@@ -741,7 +745,6 @@ color: #eee;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:1rem;
 }
 
  .blog-main{
@@ -756,11 +759,12 @@ color: #eee;
 .blog-box .blog-main .blog-img img {
   width: 100%;
   position: center;
-  height: 70%;
+  height: 50%;
 }
 .blogs .blog-box .blog-main .blog-content{
-   flex-basis: 40%;
-   
+   flex-basis: 50%;
+   height: 50%;
+   width:100%;
    background: #000;
    justify-content: center;
    display: flex;
@@ -1022,6 +1026,8 @@ width:100%;
   filter: brightness(0.9);
     width:100%;
       height: 100%;
+        transition: 0.5s;
+
 display: flex;
 animation:  zom 3s alternate infinite;
 }
@@ -1438,6 +1444,7 @@ overflow: hidden;
 .fetures .cantener img{
     width:100%;
     height: 29.6rem;
+    transition: 0.5s;
 
 }
 
@@ -1454,13 +1461,19 @@ overflow: hidden;
 
 .fetures  .row-2 .cantener .text-btu h3{
   color: var(--red);
+  transition: 0.5s;
 }
 
 
 
 
 
+
 .fetures .cantener:hover img{
+  transform: scale(1.2) rotate(7deg);
+
+}
+.fetures .cantener:hover text-btu{
   transform: scale(1.2) rotate(7deg);
 
 }
@@ -1644,7 +1657,7 @@ nav{
   height: 100vh;
   background:#fff;
   top:0;
-  
+  transition: 0.5s;
   right:-30rem;
   position: fixed;
   padding-top:5rem;
