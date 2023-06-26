@@ -734,7 +734,6 @@ color: #eee;
 .blogs .blog-box{
   width: 
   display: flex;
-  background: red;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -765,7 +764,6 @@ color: #eee;
    flex-basis: 50%;
    height: 50%;
    width:100%;
-   background: #000;
    justify-content: center;
    display: flex;
    gap:2rem;
