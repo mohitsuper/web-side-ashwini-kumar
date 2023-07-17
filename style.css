@@ -1627,7 +1627,70 @@ overflow: hidden;
 
     }
     
+.header .flex{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.header{
+top:0;
+left:0;
+border-top-left-radius:0;
+right: 0;
+padding:0rem 2rem 0rem 2rem;
+
+z-index: 1000;
+background-color:var(--white);
+position:fixed;
+
+}
+.header .flex .navbar{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+.header .flex .logo{
+  font-weight: 800;
+  font-size: 3rem;
+  color:var(--black);
+}
+
+.header .flex .logo span{
+  color:var(--green);
+}
+
+.header .flex .navbar a{
+  margin-left:2rem;
+  color:var(--black-body);
+  font-size: 1.3rem;
+  transition: 0.5s color;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
   
+}
+.header .flex .navbar .menu{
+  display: none;
+  
+}
+
+
+
+.header .flex .navbar a:hover,.active{
+  color:var(--green);
+}
+
+
+#menu-btu{
+  display:none;
+  cursor:pointer;
+  font-size: 5rem;
+  color:var(--black-body);
+}
+
+ 
   nav a{
   width:100%;
   display:inline-block;
