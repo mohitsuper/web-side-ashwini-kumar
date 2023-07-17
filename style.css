@@ -36,13 +36,12 @@
 html{
   font-size:62.5%;
   scroll-behavior: smooth;
-max-width:120rem;
   
 }
 body {
     color:black;
     background: white;
-
+width:100%;
 }
 
 .main{
@@ -50,8 +49,9 @@ body {
     position: fixed;
 
 }
+
 section{
-  max-width: 130rem;
+  max-width: 120rem;
     width:100%;
       
 
