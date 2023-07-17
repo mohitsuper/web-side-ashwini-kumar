@@ -36,7 +36,8 @@
 html{
   font-size:62.5%;
   scroll-behavior: smooth;
-
+max-width:120rem;
+  
 }
 body {
     color:black;
