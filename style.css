@@ -51,7 +51,7 @@ width:100%;
 }
 
 section{
-  min-width: 120rem;
+  max-width:140rem;
     width:100%;
       
 
@@ -1902,7 +1902,7 @@ nav{
 
 .navbar-big{
   width:100% ;
-  height: 70vh;
+  height: 100vh;
   background:#fff;
   top:0;
   right:100%;
