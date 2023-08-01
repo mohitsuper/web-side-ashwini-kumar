@@ -13,6 +13,7 @@ var sidemeu = document.getElementById('sidemenu');
   
   function closemenu(){
         sidemenu.style.right ='0px';
+       console.log('ok')
 
   }
   
