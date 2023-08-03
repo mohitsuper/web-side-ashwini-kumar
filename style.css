@@ -1843,7 +1843,7 @@ margin-top:0;
 @media only screen and (max-width:600px){
 
   .blogs .blog-box .blog-main .blog-content{
-  
+  max-height: 20rem;
     text-align: center;
     align-items: center;
    }
