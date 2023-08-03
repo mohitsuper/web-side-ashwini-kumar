@@ -973,11 +973,22 @@ margin-top:0;
   margin-bottom: 2rem;
     height: 25rem;
     width:100%;
+    justify-content: center;
+    align-items: center;
     display: flex;
     background-size: cover;
+    position: relative;
   }
-  
+  .h text{
+    text-align: center;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    font-size: 3rem;
+    width: 100%;
+  }
   .h img{
+    position: relative;
         width: 100%;
 
   }
