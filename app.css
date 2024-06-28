@@ -1,0 +1,86 @@
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Geologica', sans-serif;
+  text-decoration:none;
+  border-radius: .5rem;
+    text-transform: capitalize;
+
+}
+
+
+:root{
+  --creem: #dfe2d1;
+   --black:#333;
+   --dg-white:#eee;
+   --red:#DC9A5F;
+  
+}
+
+::-webkit-scrollbar{
+  height: 5rem;
+  width: 1rem;
+  
+}
+::-webkit-scrollbar-track{
+  background:transparent;
+}
+::-webkit-slider-thumb{
+  background: var(--creem);
+  border-radius: 5rem;
+}
+
+html{
+  font-size:62.5%;
+  scroll-behavior: smooth;
+  
+}
+body {
+    color:black;
+    background: white;
+width:100%;
+}
+
+
+.swiper-slide{
+  position: relative;
+}
+
+.swiper-slide a{
+  position: absolute;
+  bottom :23%;
+  left:13%;
+  background: #333;
+  font-size: .5rem;
+  color: #fff; padding: .5rem;
+}
+
+.item{
+  position: relative;
+}
+.item h1{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.explor .explors{
+ width:  100%;
+}
+
+.explor .explors img{
+  width: 8.5rem;
+  height: 8.5rem;
+
+}
