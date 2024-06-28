@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>aswini kumar dausa</title>
-    <script src="https://cdn.tailwindcss.com"></script
+    <script src="https://cdn.tailwindcss.com"></script>
     
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -23,13 +23,15 @@
 
 <body>
 
- <section class="main cantainer-fluid border-b-2" id="main">
-    <header class="cantainer flex inner-center justify-between  p-5">
-      <div class="logos">
+ <section class="main container-2xl  mx-auto  w-[100%] fixed top-0 z-10 bg-white" id="main">
+    <header class="container flex inner-center rounded-b-lg  items-center justify-around  mx-auto w-[100%] p-3">
+      <div class="logos w-[100%]">
        <h1 class="logo text-[1rem]">Aswini Kumar.</h1>
       </div>
 
-      <nav class="navbar-big flex gap-3  hidden  sm:block" id="sidemenu">
+      <nav class="navbar-big flex gap-5  z-50 sm:z-10 w-[100%] items-center sm:justify-end  sm:flex" id="sidemenu">
+        <ion-icon name="close-outline" onclick="openemenu()" class="text-[1.2rem] font-bold  block sm:hidden" id="menu-btu"></ion-icon>
+
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
        <a href="shop.html">shop</a>
@@ -39,16 +41,15 @@
         
 
        
-     <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">search</button>
+     <form class="flex" role="search">
+      <input class="border p-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn  bg-orange-600 hover:bg-orange-700 px-3 text-white" type="submit">search</button>
     </form>
 
-      <ion-icon name="close-outline" onclick="openemenu()" class="text-[1.2rem] font-bold" id="menu-btu"></ion-icon>
-
+     
       </nav>
     
-    <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
+    <ion-icon name="menu-outline" class="text-[1.2rem] font-bold  block sm:hidden" onclick="closemenu()" id="menu-btu"></ion-icon>
 
     
     </header>
@@ -56,9 +57,9 @@
 
 
   
-  <section id="home" class="cantainer-fluid home mb-5">
-    <div class="swiper mySwiper cantainer">
-    <div class="swiper-wrapper">
+  <section id="home" class="home container-2xl mb-5 w-[100%] mx-auto">
+    <div class="swiper mySwiper container mx-auto w-[100%] ">
+    <div class="swiper-wrapper w-[100%]">
 
       <div class="swiper-slide">
       <img src="img/img1.png" alt="img/IMG1.JPG">
@@ -88,23 +89,18 @@
   
   
 
-  <section class="product-section cantainer-fluid mx-auto mb-5">
-    <div class="pro-main grid sm:grid-cols-3 grid-cols-2 gap-3 md:grid-cols-5 px-4 cantainer mx-auto">
+  <section class="product-section container-2xl mx-auto mb-5">
+    <div class="pro-main grid sm:grid-cols-3 grid-cols-2 gap-3 md:grid-cols-5 px-4 container mx-auto">
       <div class="item">
-              <div class="col-1">
+         <div class="col-1">
             <img src="img/shop/12.jpg" alt="">
-
-      </div>
-
-
-        <h1>white sneakers</h1>
+         </div>
+          <h1>white sneakers</h1>
       </div>
       <div class="item">
          <div class="col-1">
             <img src="img/shop/1.jpg" alt="">
       </div>
-
-
         <h1>t-shrit</h1>
       </div>
       <div class="item">
@@ -145,10 +141,15 @@
     </div>
   </section>
   
-  <section class="explor cantainer-fluid mx-auto flex flex-col sm:flex-row px-3" id="explor">
-  <div class="box text-3xl text-center font-[600] bg-[#eee] cantainer w-[100%] sm:w-[50%] p-4"><h1><span class="text-orange-600">Explor</span> now</h1></div>
-    
-    <div class="swiper explors ">
+  <section class="explor container-2xl mx-auto" id="explor">
+
+    <div class="heading py-5">
+      <h2 class="heading text-3xl text-center font-[600]">explor<span class="text-orange-600">now</span></h2>
+      <p class="text-center">india compeny</p>
+  </div>
+
+  
+    <div class="swiper explors container">
     <div class="swiper-wrapper">
     <div class="swiper-slide">
              <img src="img/logo1.jpeg" alt="img/IMG1.JPG">
@@ -189,7 +190,7 @@
   </div>
   </section>
 
-     <section class="product container-fluid my-5 px-3">
+     <section class="product container-2xl my-5 px-3 mx-auto">
        
     <div class="heading py-5">
         <h2 class="heading text-3xl text-center font-[600]">best sellers<span class="text-orange-600"> products</span></h2>
@@ -197,7 +198,7 @@
     </div>
 
   
-  <div class="product-main cantainer mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
     
     <div class="pro-item" onclick="window.open('https://amzn.to/3Co059u')">
       <div class="img">
@@ -290,24 +291,22 @@
   </div>
 </section>
 
-   <section class="benner-1 benner"  width="100%" >
-
-  <div class="cantener">
-  <p>repair service</p>
-  <h1>up to<span>70% off</span>-All T-Shrit And asseres</h1>
-  <a href="shop.html" class="button-white">Explor Now</a>
-  
+ <section class="benner-1 benner container-2xl mx-auto w-[100%] ">
+  <div class="container mx-auto bg-[url('./images/bennar/y1.jpg')] h-[20rem] text-center justify-center items-center flex flex-col text-white bg-cover bg-center text-[1.8rem]">
+  <p class="font-light">repair service</p>
+  <h1>up to<span class="text-orange-600">70% off</span>-All T-Shrit And asseres</h1>
+  <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
   </div>
 </section>
 
-   <section class="product container-fluid my-5 px-3">
+   <section class="product container-2xl my-5 px-3">
   
     <div class="heading py-5">
         <h2 class="heading text-3xl text-center font-[600]">best sellers<span class="text-orange-600"> products</span></h2>
         <p class="text-center">lest 3 months sales products</p>
     </div>
 
-  <div class="product-main cantainer mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
     
 <div class="pro-item" onclick="window.open('sproduct.html')">
       <div class="img">
@@ -456,15 +455,17 @@
 </section>
 
  
- <section class="benner-2 benner" width="100%" >
-  <div class="cantener">
-  <p>repair service</p>
-  <h1>up to<span>70% off</span>-All T-Shrit And asseres</h1>
-  <a href="#" class="button-white">Explor Now</a>
+
+<section class="benner-2 benner container-2xl mx-auto w-[100%] ">
+  <div class="container mx-auto bg-[url('./images/bennar/y2.jpg')] h-[20rem] text-center justify-center items-center flex flex-col bg-cover bg-center text-white  text-[1.8rem]">
+  <p class="font-light">repair service</p>
+  <h1>up to<span class="text-orange-700">70% off</span>-All T-Shrit And asseres</h1>
+  <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
   </div>
 </section>
 
-   <section class="product container mx-auto ">
+
+   <section class="product container-2xl mx-auto ">
      
   
     <div class="heading py-5">
@@ -472,7 +473,7 @@
         <p class="text-center">lest 3 months sales products</p>
     </div>
 
-  <div class="product-main cantainer mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
     
    <div class="pro-item" onclick="window.open('sproduct.html')">
       <div class="img">
@@ -618,200 +619,40 @@
   </div>
 </section>
 
-     <section class="benner-3 benner" width="100%"  >
 
-  <div class="cantener">
-  <p>repair service</p>
-  <h1>up to<span>70% off</span>-All T-Shrit And asseres</h1>
-  <a href="#" class="button-white">Explor Now</a>
-  
+
+<section class="benner-2 benner container-2xl mx-auto w-[100%] ">
+  <div class="container mx-auto bg-[url('./images/bennar/y3.jpg')] h-[20rem] text-center justify-center items-center flex flex-col bg-cover bg-center text-white  text-[1.8rem]">
+  <p class="font-light">repair service</p>
+  <h1>up to<span class="text-orange-700">70% off</span>-All T-Shrit And asseres</h1>
+  <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
   </div>
 </section>
 
 
- <section class="product cantainer-fluid mx-autp my-5 px-3">
-   
-     
-    <div class="heading py-5">
-        <h2 class="heading text-3xl text-center font-[600]">best sellers<span class="text-orange-600"> products</span></h2>
-        <p class="text-center">lest 3 months sales products</p>
-    </div>
-
-
-  <div class="product-main cantainer mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
-    <div class="pro-item" onclick="window.open('https://amzn.to/3Noi9oP')">
-      <div class="img">
-        <img src="img/shop/o1.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <h1 class="heading">yoga meet</h1>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        
-        
-        
-        
-        
-
-        </h3>
-        
-
-        
-      </div>
-
-    </div>
-<div class="pro-item" onclick="window.open('https://amzn.to/3NoOQTd')">
-      <div class="img">
-        <img src="img/shop/o2.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <h1 class="heading">yoga meet</h1>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        
-        
-        
-        
-        
-
-        </h3>
-        
-
-        
-
-      </div>
-
-    </div>
-    <div class="pro-item" onclick="window.open('sproduct.html')">
-      <div class="img">
-        <img src="img/shop/o3.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <h1 class="heading">yoga meet</h1>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        
-        
-        
-        
-        
-
-        </h3>
-        
-
-        
-
-      </div>
-
-    </div>
-    <div class="pro-item" onclick="window.open('sproduct.html')">
-      <div class="img">
-        <img src="img/shop7.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <h1 class="heading">yoga meet</h1>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        
-        
-        
-        
-        
-
-        </h3>
-        
-
-        
-
-      </div>
-
-    </div>
-    <div class="pro-item" onclick="window.open('sproduct.html')">
-      <div class="img">
-        <img src="img/shop/o4.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <h1 class="heading">yoga meet</h1>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        
-        
-        
-        
-        
-
-        </h3>
-        
-
-      </div>
-
-    </div>
-    <div class="pro-item" onclick="window.open('sproduct.html')">
-      <div class="img">
-        <img src="img/shop/o5.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <h1 class="heading">yoga meet</h1>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        
-        
-        
-        
-        
-
-        </h3>
-        
-
-        
-
-      </div>
-
-    </div>
-
-
-    </div>
-
-</section>
-
-
  <!-------fetures explan html page----->
-<section class="fetures cantainer-fluid mx-auto px-3">
-  <div class="feture cantainer mx-auto grid sm:grid-cols-3 grid-cols-2 gap-3  w-[100%]  grid-flow-row-dense  grid-rows-3 ">
-      <div class="cantener col-span-2 row-left row-flow-2">
-       <div class="w-[100%]">
-         <img src="images/bennar/b18.jpg" alt="images/s/f1.png" class="h-[100%]">
+<section class="fetures cantainer-2xl mx-auto px-3 my-5">
+  <div class="feture container mx-auto grid sm:grid-cols-3 grid-cols-2 gap-3  w-[100%]">
 
-       </div>
+    <div class="new-box">
+      <img src="images/bennar/b18.jpg" alt="images/s/f1.png" class="h-[100%]">
     <div class="text-btu">
-      <h1>summer anime t-shirt</h1>
-      <h3>sale 50% off</h3>
-      <button class="button-white" type="submit">shop now</button>
-    </div>
+   <h1>summer anime t-shirt</h1>
+   <h3>sale 50% off</h3>
+   <button class="button-white" type="submit">shop now</button> 
+ </div>
+ </div>
 
+    <div class="new-box">
+      <img src="images/bennar/b17.jpg" alt="images/s/f1.png">
+      <div class="text-btu">
+        <h1>summer anime t-shirt</h1>
+        <h3>sale 50% off</h3>
+        <button class="button-white" type="submit">shop now</button>
       </div>
-      <div class="cantener">
-        <img src="images/bennar/b17.jpg" alt="images/s/f1.png">
-        <div class="text-btu">
-      <h1>summer anime t-shirt</h1>
-      <h3>sale 50% off</h3>
-      <button class="button-white" type="submit">shop now</button>
+      
     </div>
-
-      </div>
-      <div class="cantener">
+    <div class="new-box">
         <img src="images/bennar/b10.jpg" alt="images/s/f1.png">
         <div class="text-btu">
       <h1>summer anime t-shirt</h1>
@@ -819,71 +660,126 @@
     </div>
 
       </div>
-      <div class="cantener">
+      <div class="new-box">
         <img src="images/bennar/b7.jpg" alt="images/s/f1.png">
         
-          <div class="text-btu">
-      <h1>summer anime t-shirt</h1>
-      <h3>sale 50% off</h3>
-    </div>
-
+        <div class="text-btu">
+          <h1>summer anime t-shirt</h1>
+          <h3>sale 50% off</h3>
+        </div>
+        
       </div>
-      <div class="cantener col-span-2">
+      <div class="new-box col-span-2">
         <img src="images/bennar/b20.jpg" alt="images/s/f1.png">
         
-          <div class="text-btu">
+        <div class="text-btu">
       <h1>summer anime t-shirt</h1>
       <h3>sale 50% off</h3>
     </div>
-
+    
       </div>
   </div>
 
 
 </section>
 
-<section class="news">
-  <div class="new">
-<h1>up to 70% off all product
-</h1>
-<p>get new summber product information in fast <span>sing in</span></p>
-  </div>
-  
-  <div class="sing-in d-flex">
-    <input type="email" placeholder="your  email">
-    <button type="submit">enter</button>
+<section class="news container-2xl mx-auto">
+  <div class="new container mx-auto bg-[url('images/bennar/y4.jpg')] h-[20rem] bg-cover bg-center flex justify-center items-center  flex-row justify-around gap-3 text-2xl text-white">
 
-  </div>
+   <div class="flex gap-2 flex-col">
+     <h1>up to 70% off all product
+     </h1>
+     <p>get new summber product information in fast <span class="text-orange-700">sing in</span></p>
+   </div> 
+
+<div class="sing-in flex gap-1">
+  <input type="email" placeholder="your  email" class="p-3 text-[#333] rounded-l-lg">
+  <button type="submit" class="bg-orange-600 hover:bg-orange-700 px-3 rounded rounded-r-lg">enter</button>
+
+</div>
+
+</div>
+  
 </section>
 
 <!-- -----------vide html page---------->
 
 
+<section class="footer container-2xl mt-[5rem]">
+  <footer class="f-main container grid grid-cols-2 gap-4 sm:grid-cols-4 px-4">
+    <div class="f-col flex flex-col gap-3 mx-auto gap-3 ">
+      <div class="log w-[5rem] h-[5rem]">
+        <img src="img/logo.png" alt="" class="w-[100%]">
+      </div>
+      <div class="contect flex flex-col gap-5">
+        <h2 class="font-bold text-[1.5rem]">Contect</h2>
+        <div class="flex">
+          <h3>address:</h3>
+          <p>New Manndi Rood Dausa ,Raj</p>
+        </div>
+        <div class="flex">
+          <h3>Email:</h3>
+          <p>vijaymohit265@gmail.com</p>
+        </div>
+        <div class="flex">
+          <h3>phone:</h3>
+          <p>+91-7375829664</p>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="font-bold text-[1.5rem]">follow us</h2>
+          <div class="icon flex gap-2 text-[1.6rem] mt-3">
+            <ion-icon name="logo-facebook" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-github" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-google" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-youtube" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-instagram" role="img" class="md hydrated"></ion-icon>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="f-col flex flex-col gap-3 mx-auto ">
+     
+      <div class="contect flex flex-col gap-5">
+        <h2 class="font-bold text-[1.5rem]">About</h2>
+        <a href="#">about as</a>
+        <a href="#">Delivery Infomation</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contect us</a>
 
-
- 
-
-
-<footer class="footer">
-  
-  <section>
-        <div class="share">
-
-    <div class="link">
-            
-      <a href="https://www.instagram.com/_super_mohit_vijay_/"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="https://mohitvijay.netlify.app/"><ion-icon name="person-circle-outline"></ion-icon></a>
-      <a href="https://github.com/mohitsuper"><ion-icon name="logo-github"></ion-icon></a>
-
+        
+      </div>
     </div>
 
-<h4>&copy;copyright <span>mr mohit vijay</span> wed devloper</h4>
-    </div>
-  </section>
-  
-  
-</footer>
+    <div class="f-col flex flex-col gap-5 ">
+      <h4 class="font-bold text-[1.5rem]">account</h4>
+      <a href="#">sing in</a>
+      <a href="#">view cart</a>
+      <a href="#">track my order </a>
+      <a href="#">help</a>
+      <a href="#">my wishlist</a>
+  </div>
 
+    <div class="f-col flex flex-col gap-3 mx-auto">
+      <h4 class="font-bold text-[1.5rem]">install app</h4>
+      <p>from app stroe or goole play</p>
+      <div class="row flex h-[5rem] w-[4rem] gap-2">
+          <img src="images/s/f1.png" alt="">
+          <img src="images/s/f2.png" alt="">
+      </div>
+      <p>online payment is avlabile use upi ,bank , crad</p>
+      <div class="row">
+          <img src="img/payment.png" alt="">
+      </div>
+  </div>
+
+
+    <div class="f-col col-span-full text-center p-5 mt-5">
+      
+    <h4>&copy;copyright <span class="text-orange-700">mr mohit vijay</span> wed devloper</h4>
+    </div>
+  </footer>
+</section>
  
 </body>
 

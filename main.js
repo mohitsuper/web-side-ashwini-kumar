@@ -1,6 +1,5 @@
 
 var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 6,
        autoplay: {
           delay: 2900,
           direction: 'vertical',
@@ -53,7 +52,7 @@ var swiper = new Swiper(".explors", {
 
   breakpoints: {
           360: {
-            slidesPerView:3,
+            slidesPerView:2,
             
           },
           768: {

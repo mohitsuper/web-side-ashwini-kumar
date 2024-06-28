@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Geologica', sans-serif;
   text-decoration:none;
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
     text-transform: capitalize;
 
 }
@@ -60,27 +60,90 @@ width:100%;
 
 .item{
   position: relative;
+  width: 100%;
+}
+.item img{
+  width: 100%;
 }
 .item h1{
   position: absolute;
-  bottom: 0;
+  bottom: .5rem;
   width: 100%;
   text-align: center;
 }
 
 .box{
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
 
-.explor .explors{
- width:  100%;
-}
 
-.explor .explors img{
+.explors .swiper-slide{
   width: 8.5rem;
   height: 8.5rem;
 
+}
+.explors .swiper-slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.pro-item{
+  padding: .5rem;
+  width: 100%;
+}
+.pro-item img{
+  width: 100%;
+  height: 22rem;
+}
+
+.btu{
+  background: rgb(234 88 12);
+  padding: .5rem;
+
+}
+
+.mySwiper img{
+  width: 100%;
+}
+
+.new-box{
+  position: relative;
+  width: 100%;
+  height: 30rem;
+}
+
+.new-box img{
+  width: 100%;
+  height: 100%;
+}
+.new-box .text-btu{
+  font-size: 1.8rem;
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  color: white;
+}
+.new-box .text-btu h3{
+  color: #da2e2e;
+  font-weight: 600;
+}
+
+
+
+@media only screen and (max-width:540px) {
+
+   nav{
+    display:flex;
+    position: absolute;
+    top :2rem;
+    background: white;
+    right:100%;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 1000;
+   justify-content: flex-start;
+
+  }
 }
