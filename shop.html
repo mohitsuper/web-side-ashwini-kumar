@@ -10,970 +10,635 @@
   <!-- HTML -->
   
   <link rel="shortcut icon" href="img/logo.png" type="img/icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- HTML -->
+  <!--  -->
+
+  <link rel="stylesheet" href="app.css">
   
-  <!----->
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  
-  <link rel="stylesheet" href="style_sheet.css">
-  
-  <style>
-  /*.main {
-    position: relative;
-  }
-  */
-  .home{
-    width: 100%;
-    z-index: -1;
-    position: relative;
-    text-align: center;
-    height: 25rem;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-padding-top: 8.5rem;
-  }
-  
-
-.product .heading{
-  margin-top:10rem;
-}
-
-@media only screen and (max-width:540px){
- .product .heading {
-   margin-top: 2rem;
- } 
-}
-
-  </style>
-
+  <!----->
+ 
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <body>
   
-    <section class="main" id="main">
-    <header>
-       <h1 class="logo">Aswini Kumar.</h1>
+  <section class="main container-2xl  mx-auto  w-[100%] fixed top-0 z-10 bg-white" id="main">
+    <header class="container flex inner-center rounded-b-lg  items-center justify-around  mx-auto w-[100%] p-3">
+      <div class="logos w-[100%]">
+       <h1 class="logo text-[1rem]">Aswini Kumar.</h1>
+      </div>
 
-      <nav class="navbar-big" id="sidemenu">
-        <a href="index.html">Home</a>
+      <nav class="navbar-big flex gap-5  z-50 sm:z-10 w-[100%] items-center sm:justify-end  sm:flex" id="sidemenu">
+        <ion-icon name="close-outline" onclick="openemenu()" class="text-[1.2rem] font-bold  block sm:hidden" id="menu-btu"></ion-icon>
+
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
-       <a href="shop.html" class="active">shop</a>
+       <a href="shop.html">shop</a>
         <a href="blog.html">blogs</a>
         <a href="video.html">Video</a>
-        <a href="contect.html">Contect</a>
+        <a href="countect.html">Contect</a>
         
 
-        
-      <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">search</button>
+       
+     <form class="flex" role="search">
+      <input class="border p-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn  bg-orange-600 hover:bg-orange-700 px-3 text-white" type="submit">search</button>
     </form>
 
-      <ion-icon name="close-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
-
+     
       </nav>
     
-    <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
+    <ion-icon name="menu-outline" class="text-[1.2rem] font-bold  block sm:hidden" onclick="closemenu()" id="menu-btu"></ion-icon>
 
     
     </header>
   </section>
 
-  <!----------hero page html------------>
-
-  <section class="h" width="100%">
-  <img src="img/banner.jpg" alt="img/IMG1.JPG">
-</section>
-
-  
-  <!---------hero apge end------------->
 
 
-   <section class="product">
-     
-     
-  <h2 class="heading">shoping<span>Now</span></h2>
-  <p>summer colletion moden desine</p>
-  
-  <div class="product-main">
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop1.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-        <div class="pro-item">
-      <div class="img">
-        <img src="img/shop3.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop4.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop2.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop9.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop8.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop7.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    
-        <div class="pro-item">
-      <div class="img">
-        <img src="img/shop6.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop5.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/1.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-        <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/3.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/4.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/2.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/11.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/12.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/13.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    
-        <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/24.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-        
-
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/14.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/15.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/16.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/17.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/18.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/19.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/20.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/21.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline"  ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/22.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="#"><ion-icon name="bag-handle-outline" ></ion-icon></a>
-    </div>
-    <div class="pro-item">
-      <div class="img">
-        <img src="img/shop/23.jpg" alt="img/shop">
-      </div>
-      
-      <div class="cantener">
-        <span>Zara</span>
-        <p>half  round neak t-shrit for summer color are black</p>
-        
-        <h3>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-
-        </h3>
-        
-        <h2>&#8377; 599 </h2>
-      </div>
-  <a href="sproduct.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-    </div>
-
-
-  </div>
-
-
-
-
-</section>
-
-<section class="pagination">
-  <a href="#">1</a>
-  <a href="#">2</a>
-  <a href="#"><ion-icon name="arrow-forward-outline" id="menu"></ion-icon></ion-icon>
-</a>
-</section>
-
-
- <!-------fetures explan html page----->
-<!-- -----------vide html page---------->
-
-
- <!------------review------------------->
-<!-----------reviwe end ---------------->
- 
- <!------------the caontect page ------->
-<section class="news">
-  <div class="new">
-<h1>up to 70% off all product
-</h1>
-<p>get new summber product information in fast <span>sing in</span></p>
-  </div>
-  
-  <div class="sing-in">
-    <input type="text" placeholder="your  email">
-    <button class="btn btn-success" type="submit">Search</button>
-
-  </div>
-</section>
-<footer class="footer">
-  
-  <section>
-    <div class="link">
-            <ion-icon name="intagram-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
-
-    </div>
-    <div class="share">
-
-<h4>&copy;copyright <span>mr mohit vijay</span> wed devloper</h4>
+  <section class="benner-1 benner container-2xl mx-auto w-[100%] mb-5 pt-10 ">
+    <div class="container mx-auto bg-[url('./images/bennar/b1.jpg')] h-[20rem] text-center justify-center items-center flex flex-col text-[#aaa] bg-cover bg-center ">
+      <p class="font-light text-[2.5rem]">repair service</p>
+      <h1 class="text-[1.5rem]">up to<span class="text-orange-700">70% off</span>-All T-Shrit And asseres</h1>
     </div>
   </section>
-  
-  
-</footer>
-
  
+  
+
+  
+
+<section class="product container-2xl mx-auto ">
+     
+  
+  <div class="heading py-5">
+      <h2 class="heading text-3xl text-center font-[600]">best sellers<span class="text-orange-600"> products</span></h2>
+      <p class="text-center">lest 3 months sales products</p>
+  </div>
+
+<div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  
+ <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop4.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+  
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop8.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+  
+
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop5.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop/y4.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop/y5.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop/s1.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+
+
+</div>
+</section>
+
+<section class="product container-2xl my-5 px-3">
+  
+  <div class="heading py-5">
+      <h2 class="heading text-3xl text-center font-[600]">best sellers<span class="text-orange-600"> products</span></h2>
+      <p class="text-center">lest 3 months sales products</p>
+  </div>
+
+<div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  
+<div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop1.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+    </div>
+
+  </div>
+<div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop3.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">EURO noice reducing</h1>
+      <p>EURO nocie reducing its use meditation all directions sonds to removed</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+<div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop2.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">dumble</h1>
+      <p>15kg dumble set its all the body training workout perfomed</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+<div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop9.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">smart watch</h1>
+      <p>digital watch use health information details to given watch is water proof</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+<div class="pro-item" onclick="window.open('https://amzn.to/3Noi9oP')">
+    <div class="img">
+      <img src="img/shop10.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">water bottle</h1>
+      <p>its classic coper bottal 24hr cool water</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  
+<div class="pro-item" onclick="window.open('https://amzn.to/3NrfEDv')">
+    <div class="img">
+      <img src="img/shop6.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">paser</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+
+
+
+</div>
+</section>
+
+<section class="product container-2xl mx-auto ">
+     
+  
+  <div class="heading py-5">
+      <h2 class="heading text-3xl text-center font-[600]">best sellers<span class="text-orange-600"> products</span></h2>
+      <p class="text-center">lest 3 months sales products</p>
+  </div>
+
+<div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  
+ <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop4.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+  
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop8.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+      
+
+    </div>
+
+  </div>
+  
+
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop5.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop/y4.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop/y5.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+  <div class="pro-item" onclick="window.open('sproduct.html')">
+    <div class="img">
+      <img src="img/shop/s1.jpg" alt="img/shop">
+    </div>
+    
+    <div class="cantener">
+      <h1 class="heading">yoga meet</h1>
+      <p>half  round neak t-shrit for summer color are black</p>
+      
+      <h3>
+      
+      
+      
+      
+      
+
+      </h3>
+      
+
+    </div>
+
+  </div>
+
+
+</div>
+</section>
+
+
+
+  
+
+  <section class="news container-2xl mx-auto ">
+    <div class="new container mx-auto bg-[url('images/bennar/y4.jpg')] h-[20rem] bg-cover bg-center flex justify-center items-center  flex-row justify-around gap-3 text-2xl text-white flex-col md:flex-row px-3">
+  
+     <div class="flex gap-2 flex-col">
+       <h1>up to 70% off all product
+       </h1>
+       <p>get new summber product information in fast <span class="text-orange-700">sing in</span></p>
+     </div> 
+  
+  <div class="sing-in flex   gap-1">
+    <input type="email" placeholder="your  email" class="p-3 text-[#333] rounded-l-lg">
+    <button type="submit" class="bg-orange-600 hover:bg-orange-700 px-3 rounded rounded-r-lg">enter</button>
+  
+  </div>
+  
+  </div>
+    
+  </section>
+  
+  <!-- -----------vide html page---------->
+  
+  
+  <section class="footer container-2xl mt-[5rem] mx-auto">
+    <footer class="f-main container grid grid-cols-2 gap-4 sm:grid-cols-4 px-4 mx-auto">
+      <div class="f-col flex flex-col gap-3 mx-auto gap-3 ">
+        <div class="log w-[5rem] h-[5rem]">
+          <img src="img/logo.png" alt="" class="w-[100%]">
+        </div>
+        <div class="contect flex flex-col gap-5">
+          <h2 class="font-bold text-[1.5rem]">Contect</h2>
+          <div class="flex">
+            <h3>address:</h3>
+            <p>New Manndi Rood Dausa ,Raj</p>
+          </div>
+          <div class="flex">
+            <h3>Email:</h3>
+            <p>vijaymohit265@gmail.com</p>
+          </div>
+          <div class="flex">
+            <h3>phone:</h3>
+            <p>+91-7375829664</p>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="font-bold text-[1.5rem]">follow us</h2>
+            <div class="icon flex gap-2 text-[1.6rem] mt-3">
+              <ion-icon name="logo-facebook" role="img" class="md hydrated"></ion-icon>
+              <ion-icon name="logo-github" role="img" class="md hydrated"></ion-icon>
+              <ion-icon name="logo-google" role="img" class="md hydrated"></ion-icon>
+              <ion-icon name="logo-youtube" role="img" class="md hydrated"></ion-icon>
+              <ion-icon name="logo-instagram" role="img" class="md hydrated"></ion-icon>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="f-col flex flex-col gap-3 mx-auto ">
+       
+        <div class="contect flex flex-col gap-5">
+          <h2 class="font-bold text-[1.5rem]">About</h2>
+          <a href="#">about as</a>
+          <a href="#">Delivery Infomation</a>
+          <a href="#">Terms & Condition</a>
+          <a href="#">Contect us</a>
+  
+          
+        </div>
+      </div>
+  
+      <div class="f-col flex flex-col gap-5 ">
+        <h4 class="font-bold text-[1.5rem]">account</h4>
+        <a href="#">sing in</a>
+        <a href="#">view cart</a>
+        <a href="#">track my order </a>
+        <a href="#">help</a>
+        <a href="#">my wishlist</a>
+    </div>
+  
+      <div class="f-col flex flex-col gap-3 mx-auto">
+        <h4 class="font-bold text-[1.5rem]">install app</h4>
+        <p>from app stroe or goole play</p>
+        <div class="row flex h-[5rem] w-[4rem] gap-2">
+            <img src="images/s/f1.png" alt="">
+            <img src="images/s/f2.png" alt="">
+        </div>
+        <p>online payment is avlabile use upi ,bank , crad</p>
+        <div class="row">
+            <img src="img/payment.png" alt="">
+        </div>
+    </div>
+  
+  
+      <div class="f-col col-span-full text-center p-5 mt-5">
+        
+      <h4>&copy;copyright <span class="text-orange-700">mr mohit vijay</span> wed devloper</h4>
+      </div>
+    </footer>
+  </section>
+  
 </body>
 <script src="main.js"></script>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<script>    
-var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 5,
-       autoplay: {
-          delay: 2500,
-          direction: 'vertical',
-          disableOnInteraction: false,
-          loop:true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
-<script>
-      var swiper = new Swiper(".explors", {
-        
-        spaceBetween: 0,
-      autoplay: {
-       delay: 500,
-      disableOnInteraction:false,
-        loop: true,
-      
-        },
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:3,
-            
-          },
-          768: {
-            slidesPerView: 5,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
-    
-    
-    <script>
-      var win;
-    
-      function isha() {
-        win = window.open('https://youtube.com/@ishafoundation', width = '500px', height = "500px");
-      }
-      
-      function ishamusic()
-      {
-       win = window.open('https://youtube.com/@soundsofisha', width = '500px', height = "500px");
-
-      }
-      
-        
-      
-      function indianmadical()
-      {
-       win = window.open('https://youtube.com/@theyogainstituteofficial', width = '500px', height = "500px");
-
-      }
-      
-    function panjali(){
-   win = window.open('https://youtube.com/@SwamiRamdevOfficial', width = '500px', height = "500px");
-    }
- 
-    </script>
-    
-
-<script>
-      var swiper = new Swiper(".shops", {
-
-        spaceBetween: 30,
-      autoplay: {
-       delay: 3000,
-      disableOnInteraction:true,
-      
-        loop: true,
-      
-      
-        },
-        
-                
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-                navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:1,
-            
-          },
-          768: {
-            slidesPerView: 2,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
-
-<script>
-      var swiper = new Swiper(".reviews", {
-        
-        spaceBetween: 30,
-      autoplay: {
-       delay: 3000,
-      disableOnInteraction:false,
-        loop: true,
-      
-        },
-        
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:1,
-            
-          },
-          768: {
-            slidesPerView: 2,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
 
 </html>
