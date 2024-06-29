@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
 
 *{
   margin:0;
@@ -78,6 +78,28 @@ nav a::after{
   height: .3rem;
   
 
+}
+
+.review .review-box{
+  height: 100%;
+  display: flex;
+}
+
+.form-main input,.form-main textarea{
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
+.details .info{
+display: flex;
+gap: 2rem;
+margin-top: 1.2rem;
+flex-direction: column;
+}
+.details li{
+  font-size: 1.8rem;
+  font-weight: 300;
+  display: flex; gap: 3rem;
 }
 
 .active{

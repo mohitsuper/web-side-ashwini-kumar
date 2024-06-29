@@ -9,270 +9,291 @@
   
   <!-- HTML -->
   <!--  -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   
   <link rel="shortcut icon" href="img/logo.png" type="img/icon">
   
   <!----->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="app.css">
+  
   <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<style>
-  .about {
-    padding: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 2.5rem;
-  }
-.about-2 .row{
-  display: flex;
-  flex-direction: row-reverse;
-}
-</style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <link rel="shortcut icon" href="img/logo.png" type="img/icon">
+  
+  <!----->
+  
 <body>
-<section class="main" id="main">
-    <header>
-       <h1 class="logo">Aswini Kumar.</h1>
 
-      <nav class="navbar-big" id="sidemenu">
-        <a href="index.html">Home</a>
+
+  <section class="main container-2xl  mx-auto  w-[100%] fixed top-0 z-10 bg-white" id="main">
+    <header class="container flex inner-center rounded-b-lg  items-center justify-around  mx-auto w-[100%] p-3">
+      <div class="logos w-[100%]">
+       <h1 class="logo text-[1rem]">Aswini Kumar.</h1>
+      </div>
+
+      <nav class="navbar-big flex gap-5  z-50 sm:z-10 w-[100%] items-center sm:justify-end  sm:flex" id="sidemenu">
+        <ion-icon name="close-outline" onclick="openemenu()" class="text-[1.2rem] font-bold  block sm:hidden" id="menu-btu"></ion-icon>
+
+        <a href="index.html" >Home</a>
         <a href="about.html" >About</a>
-       <a href="shop.html" >shop</a>
-        <a href="blog.html">blogs</a>
+       <a href="shop.html">shop</a>
+        <a href="blog.html" >blogs</a>
         <a href="video.html">Video</a>
-        <a href="contect.html" class="active">Contect</a>
+        <a href="countect.html" class="active">Contect</a>
         
 
-        
-      <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">search</button>
+       
+     <form class="flex" role="search">
+      <input class="border p-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn  bg-orange-600 hover:bg-orange-700 px-3 text-white" type="submit">search</button>
     </form>
 
-      <ion-icon name="close-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
-
+     
       </nav>
     
-    <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
+    <ion-icon name="menu-outline" class="text-[1.2rem] font-bold  block sm:hidden" onclick="closemenu()" id="menu-btu"></ion-icon>
 
     
     </header>
-  </section>  
-    <section class="h" width="100%">
-  <img src="images/bennar/b1.jpg" alt="img/IMG1.JPG">
-</section>
+  </section>
+
+
+
+  <section class="benner-1 benner container-2xl mx-auto w-[100%] mb-5 pt-10 ">
+    <div class="container mx-auto bg-[url('./images/bennar/b3.jpg')] h-[20rem] text-center justify-center items-center flex flex-col text-white bg-cover bg-center text-[1.8rem]">
+    <p class="font-light">repair service</p>
+    <h1>up to<span class="text-orange-600">70% off</span>-All T-Shrit And asseres</h1>
+    </div>
+  </section>
 
   
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.177617290972!2d76.32854377543894!3d26.89785757665607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d8dbb3f5cb08f%3A0x98f7b35fd174ffb4!2saswini%20kumar!5e0!3m2!1sen!2sin!4v1691060282289!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
     <!--  -->
 <!--  -->
  <!-------fetures explan html page----->
 <!-- -----------vide html page---------->
 
+<section class="contact container-2xl mx-auto my-5 ">
+  <div class="contact-main container mx-auto flex gap-3 h-[40rem] sm:h-[30rem] justify-center flex-col px-5 sm:flex-row">
+
+    
+      <div class="details flex flex-col basis-[50%] justify-center pl-[2.5rem]">
+          <span class="text-gray-500 text-[5rem]">get in touch</span>
+          <h2 class="text-2xl tect-gray-600">visit one of aur agerncy locatona or contact us today</h2>
+          <div class="info">
+              <li>
+                  <ion-icon name="call-outline" role="img" class="md hydrated"></ion-icon>
+                  <p>+91-6378609330</p>
+              </li>
+              <li>
+                  <ion-icon name="mail-outline" role="img" class="md hydrated"></ion-icon>
+                  <p>vijaymohit265@gmail.com</p>
+              </li>
+              <li>
+                  <ion-icon name="home-outline" role="img" class="md hydrated"></ion-icon>
+                  <p>new house dausa, raj</p>
+              </li>
+          </div>
+
+      </div>
+      <div class="map h-[100%] flex basis-[50%]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113866.04440691105!2d76.26064857740488!3d26.89353164614226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d8cc629f972ed%3A0xfb13d0ff4d9ec652!2sDausa%2C%20Rajasthan%20303303!5e0!3m2!1sen!2sin!4v1692009633026!5m2!1sen!2sin"  loading="lazy" class="h-[100%] w-[100%]" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+</section>
 
 
+<section class="form container-2xl">
+  <div class="heading py-5">
+    <h2 class="heading text-3xl text-center font-[600]">Contact<span class="text-orange-600"> us</span></h2>
+    <p class="text-center">We Love Here For You</p>
+</div>
+
+  <div class="form-main container flex mx-auto gap-5 h-[30rem] my-5 flex-col sm:flex-row px-5">
+
+      <form action=" " class="flex flex-col basis-[40%] gap-5 h-[100%]">
+          <input type="text" class="input-box" placeholder="name">
+          <input type="email" class="input-box" placeholder="email">
+          <input type="number" class="input-box" placeholder="phone-no">
+          <textarea name="message" id="" placeholder="massage" class="input-box" cols="30" rows="10"></textarea>
+          <button type="submit" class="btu">submit</button>
+      </form>
+      <div class="review section-pg flex flex-col gap-5">
+          <div class="review-box">
+              <div class="img">
+                  <img src="img/review1.png" alt="">
+              </div>
+              <div class="review-text">
+                  <h1>mohit vijay</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam accusantium labore quis
+                      quidem delectus odio impedit iure incidunt aspernatur, cum nobis distinctio soluta obcaecati
+                      culpa voluptas consequuntur? Voluptatibus, porro error.</p>
+                  <h6>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                  </h6>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="img">
+                  <img src="img/insta//2.jpg" alt="">
+              </div>
+              <div class="review-text">
+                  <h1>mohit vijay</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam accusantium labore quis
+                      quidem delectus odio impedit iure incidunt aspernatur, cum nobis distinctio soluta obcaecati
+                      culpa voluptas consequuntur? Voluptatibus, porro error.</p>
+                  <h6>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                  </h6>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="img">
+                  <img src="img/insta//3.jpg" alt="">
+              </div>
+              <div class="review-text">
+                  <h1>mohit vijay</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam accusantium labore quis
+                      quidem delectus odio impedit iure incidunt aspernatur, cum nobis distinctio soluta obcaecati
+                      culpa voluptas consequuntur? Voluptatibus, porro error.</p>
+                  <h6>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                  </h6>
+              </div>
+          </div>
+          <div class="review-box">
+              <div class="img">
+                  <img src="img/insta//4.jpg" alt="">
+              </div>
+              <div class="review-text">
+                  <h1>mohit vijay</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam accusantium labore quis
+                      quidem delectus odio impedit iure incidunt aspernatur, cum nobis distinctio soluta obcaecati
+                      culpa voluptas consequuntur? Voluptatibus, porro error.</p>
+                  <h6>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated"></ion-icon>
+                  </h6>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
  <!------------review------------------->
 <!-----------reviwe end ---------------->
- 
+<section class="news container-2xl mx-auto ">
+  <div class="new container mx-auto bg-[url('images/bennar/y4.jpg')] h-[20rem] bg-cover bg-center flex justify-center items-center  flex-row justify-around gap-3 text-2xl text-white flex-col md:flex-row px-3">
+
+   <div class="flex gap-2 flex-col text-center sm:text-left">
+     <h1>up to 70% off all product
+     </h1>
+     <p>get new summber product information in fast <span class="text-orange-700">sing in</span></p>
+   </div> 
+
+<div class="sing-in flex   gap-1">
+  <input type="email" placeholder="your  email" class="p-3 text-[#333] rounded-l-lg">
+  <button type="submit" class="bg-orange-600 hover:bg-orange-700 px-3 rounded rounded-r-lg">enter</button>
+
+</div>
+
+</div>
+  
+</section>
+
  <!------------the caontect page ------->
  
+ <section class="footer container-2xl mt-[5rem] mx-auto">
+  <footer class="f-main container grid grid-cols-2 gap-4 sm:grid-cols-4 px-4 mx-auto">
+    <div class="f-col flex flex-col gap-3 mx-auto gap-3 ">
+      <div class="log w-[5rem] h-[5rem]">
+        <img src="img/logo.png" alt="" class="w-[100%]">
+      </div>
+      <div class="contect flex flex-col gap-5">
+        <h2 class="font-bold text-[1.5rem]">Contect</h2>
+        <div class="flex">
+          <h3>address:</h3>
+          <p>New Manndi Rood Dausa ,Raj</p>
+        </div>
+        <div class="flex">
+          <h3>Email:</h3>
+          <p>vijaymohit265@gmail.com</p>
+        </div>
+        <div class="flex">
+          <h3>phone:</h3>
+          <p>+91-7375829664</p>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="font-bold text-[1.5rem]">follow us</h2>
+          <div class="icon flex gap-2 text-[1.6rem] mt-3">
+            <ion-icon name="logo-facebook" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-github" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-google" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-youtube" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-instagram" role="img" class="md hydrated"></ion-icon>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="f-col flex flex-col gap-3 mx-auto ">
+     
+      <div class="contect flex flex-col gap-5">
+        <h2 class="font-bold text-[1.5rem]">About</h2>
+        <a href="#">about as</a>
+        <a href="#">Delivery Infomation</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contect us</a>
 
-<footer class="footer">
-  
-  <section>
-        <div class="share">
-
-    <div class="link">
-            
-      <a href="https://www.instagram.com/_super_mohit_vijay_/"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="https://mohitvijay.netlify.app/"><ion-icon name="person-circle-outline"></ion-icon></a>
-      <a href="https://github.com/mohitsuper"><ion-icon name="logo-github"></ion-icon></a>
-
+        
+      </div>
     </div>
 
-<h4>&copy;copyright <span>mr mohit vijay</span> wed devloper</h4>
+    <div class="f-col flex flex-col gap-5 ">
+      <h4 class="font-bold text-[1.5rem]">account</h4>
+      <a href="#">sing in</a>
+      <a href="#">view cart</a>
+      <a href="#">track my order </a>
+      <a href="#">help</a>
+      <a href="#">my wishlist</a>
+  </div>
+
+    <div class="f-col flex flex-col gap-3 mx-auto">
+      <h4 class="font-bold text-[1.5rem]">install app</h4>
+      <p>from app stroe or goole play</p>
+      <div class="row flex h-[5rem] w-[4rem] gap-2">
+          <img src="images/s/f1.png" alt="">
+          <img src="images/s/f2.png" alt="">
+      </div>
+      <p>online payment is avlabile use upi ,bank , crad</p>
+      <div class="row">
+          <img src="img/payment.png" alt="">
+      </div>
+  </div>
+
+
+    <div class="f-col col-span-full text-center p-5 mt-5">
+      
+    <h4>&copy;copyright <span class="text-orange-700">mr mohit vijay</span> wed devloper</h4>
     </div>
-  </section>
-  
-  
-</footer>
+  </footer>
+</section>
 
  
 </body>
 <script src="main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-<script>    
-var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 5,
-       autoplay: {
-          delay: 2500,
-          direction: 'vertical',
-          disableOnInteraction: false,
-          loop:true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
-<script>
-      var swiper = new Swiper(".explors", {
-        
-        spaceBetween: 0,
-      autoplay: {
-       delay: 500,
-      disableOnInteraction:false,
-        loop: true,
-      
-        },
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:3,
-            
-          },
-          768: {
-            slidesPerView: 5,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
-    
-    
-    <script>
-      var win;
-    
-      function isha() {
-        win = window.open('https://youtube.com/@ishafoundation', width = '500px', height = "500px");
-      }
-      
-      function ishamusic()
-      {
-       win = window.open('https://youtube.com/@soundsofisha', width = '500px', height = "500px");
-
-      }
-      
-        
-      
-      function indianmadical()
-      {
-       win = window.open('https://youtube.com/@theyogainstituteofficial', width = '500px', height = "500px");
-
-      }
-      
-    function panjali(){
-   win = window.open('https://youtube.com/@SwamiRamdevOfficial', width = '500px', height = "500px");
-    }
- 
-    </script>
-    
-
-<script>
-      var swiper = new Swiper(".shops", {
-
-        spaceBetween: 30,
-      autoplay: {
-       delay: 3000,
-      disableOnInteraction:true,
-      
-        loop: true,
-      
-      
-        },
-        
-                
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-                navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:1,
-            
-          },
-          768: {
-            slidesPerView: 2,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
-
-<script>
-      var swiper = new Swiper(".reviews", {
-        
-        spaceBetween: 30,
-      autoplay: {
-       delay: 3000,
-      disableOnInteraction:false,
-        loop: true,
-      
-        },
-        
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        
-        breakpoints: {
-          540: {
-            slidesPerView:1,
-            
-          },
-          768: {
-            slidesPerView: 2,
-            
-          },
-          1024: {
-            slidesPerView: 5,
-
-          },
-        },
-      });
-    </script>
-
 </html>
