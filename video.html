@@ -6,292 +6,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      border-radius: 5px;
-    }
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="app.css">
     
-    .body{
-      background: #eee;
-      
-    }
-    .heading{
-      width: 100%;
-      font-size: 25px;
-      font-weight: 550;
-      text-transform: uppercase;
-      padding:10px;
-    }
-    .video{
-       margin-top:;
-      display: grid;
-      padding: 15px;
-      background: #fff;
-      grid-template-columns: 2fr 1fr;
-      gap:10;
-    }
-    
-    .video .main-video{
-      padding: 10px;
-      background: #eee;
-    }
-    .video .main-video .iframe{
-      width: 100%;
-    }
-    
-    .video .row-video{
-      padding:10px;
-      background: #eee;
-      overflow-y:scroll;
-      
-      gap:15;
-    }
-    
-    .video .row-video::-webkit-scrollbar{
-      width: 8px;
-    }
-   .video .row-video::-webkit-scrollbar-track{
-     background: #ccc;
-     border-radius: 50px;
-   }
-  
-  .video .row-video::-webkit-slider-thumb {
-    background: #333;
-    border-radius: 5rem;
-  }
-
-        .video .row-video .row-item{
-          background: #fff;
-          border: 1px solid #333;
-        }
-
-    .video .row-video .row-item .iframe class="samllvideo" iframe{
-      width:100%;
-            height: 150px;
-            
-
-    }
-    
-  .h img{
-    height: 80rem;
-    z-index: 100;
-    
-  }
-
-@media (max-width:600px;){
-  .video{
-  display: grid;
-  grid-template-columns: 1fr;
-
-}
-
-}
-  </style>
     <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<meta name="trustpilot-one-time-domain-verification-id" content="7bb6c009-836f-47b3-b004-6b1f90468a16"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8642625108666875"
-     crossorigin="anonymous"></script>
-  
-  <meta name="google-site-verification" content="MLRZkW7fkmeuR8_-yxQtAI_gayHXLD_S2RKUto1-nAE" />
-  
-  <meta name="keywords" content="aswini kumar dausa, aswinikumar, aswini kumar, aswini kumar health">
-
-  
-
-  <meta name="Description" content="The bussiness promie yoga , helath medicine and music . Bussiness are viesion Ayurvedic medicine and prouduct sales all the world ">
-
-  
-
-
-  
-
-  <meta name="author" content="mohit vijay">
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8642625108666875"
-     crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="img/icon">
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
   
-    <section class="main" id="main">
-    <header>
-       
-           <h1 class="logo">Aswini Kumar.</h1>
-      <nav class="navbar-big" id="sidemenu">
+ <section class="main container-2xl  mx-auto  w-[100%] h-[5rem] fixed top-0 bg-white z-10 " id="main">
+    <header class="container flex inner-center rounded-b-lg  items-center justify-around  mx-auto w-[100%] h-[100%] p-4">
+      <div class="logos w-[100%] h-[2rem] flex gap-3">
+        <img src="./img/logo.png" class="width-[100%] h-[100%]" alt="">
+       <h1 class="logo text-[1rem]">Aswini Kumar.</h1>
+      </div>
+
+      <nav class="navbar-big flex gap-5 w-[100%] items-center sm:justify-end  sm:flex" id="sidemenu">
+        <ion-icon name="close-outline" onclick="openemenu()" class="text-[1.2rem] font-bold  block sm:hidden" id="menu-btu"></ion-icon>
+
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-       <a href="shop.html" >shop</a>
-        <a href="blog.html">blog</a>
+       <a href="shop.html">shop</a>
+        <a href="blog.html">blogs</a>
         <a href="video.html" class="active">Video</a>
-        <a href="#contect">Contect</a>
+        <a href="countect.html">Contect</a>
         
-            <form class="d-flex" class="form" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <a class="btn btn-outline-success" type="submit">Search</a>
+
+       
+     <form class="flex" role="search">
+      <input class="border p-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn  bg-orange-600 hover:bg-orange-700 px-3 text-white" type="submit">search</button>
     </form>
 
-      <ion-icon name="close-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
-
+     
       </nav>
     
-    <ion-icon name="menu-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
-
+    <ion-icon name="menu-outline" class="text-[1.2rem] font-bold  block sm:hidden" onclick="closemenu()" id="menu-btu"></ion-icon>
 
     
     </header>
   </section>
-  
-    <section class="home" width="100%">
-  <img src="img/bennar/4.jpg" alt="img/IMG1.JPG" width="100%" >
+ <section class="benner-1 benner container-2xl mx-auto w-[100%] my-5 pt-[4rem] ">
+  <div class="container-sm mx-auto bg-[url('./images/bennar/y1.jpg')] h-[20rem] text-center justify-center items-center flex flex-col text-white bg-cover bg-center text-[1.8rem]">
+  <p class="font-light">repair service</p>
+  <h1>up to<span class="text-orange-600">70% off</span>-All T-Shrit And asseres</h1>
+  <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
+  </div>
 </section>
 
 
- <section id="video" class="video">
+<section class="news container-2xl mx-auto ">
+  <div class="new container-sm mx-auto bg-[url('images/bennar/y4.jpg')] h-[20rem] bg-cover bg-center flex justify-center items-center  flex-row justify-around gap-3 text-2xl text-white flex-col md:flex-row px-3">
+
+   <div class="flex gap-2 flex-col">
+     <h1>up to 70% off all product
+     </h1>
+     <p>get new summber product information in fast <span class="text-orange-700">sing in</span></p>
+   </div> 
+
+<div class="sing-in flex   gap-1">
+  <input type="email" placeholder="your  email" class="p-3 text-[#333] rounded-l-lg">
+  <button type="submit" class="bg-orange-600 hover:bg-orange-700 px-3 rounded rounded-r-lg">enter</button>
+
+</div>
+
+</div>
   
-  
-  <div class="main-video">
-    <iframe class="Mainvideo" width="100%" height="500" src="https://www.youtube.com/embed/eeOrjmplbWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+</section>
+
+
+<section class="footer container-2xl mt-[5rem] mx-auto">
+  <footer class="f-main container-sm grid grid-cols-2 gap-4 sm:grid-cols-4 px-4 mx-auto">
+    <div class="f-col flex flex-col gap-3 mx-auto gap-3 ">
+      <div class="log w-[5rem] h-[5rem]">
+        <img src="img/logo.png" alt="" class="w-[100%]">
+      </div>
+      <div class="contect flex flex-col gap-5">
+        <h2 class="font-bold text-[1.5rem]">Contect</h2>
+        <div class="flex">
+          <h3>address:</h3>
+          <p>New Manndi Rood Dausa ,Raj</p>
+        </div>
+        <div class="flex">
+          <h3>Email:</h3>
+          <p>vijaymohit265@gmail.com</p>
+        </div>
+        <div class="flex">
+          <h3>phone:</h3>
+          <p>+91-7375829664</p>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="font-bold text-[1.5rem]">follow us</h2>
+          <div class="icon flex gap-2 text-[1.6rem] mt-3">
+            <ion-icon name="logo-facebook" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-github" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-google" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-youtube" role="img" class="md hydrated"></ion-icon>
+            <ion-icon name="logo-instagram" role="img" class="md hydrated"></ion-icon>
+        </div>
+        </div>
+      </div>
+    </div>
     
-    <div class="heading">
-      <p> 1. the is a heading</p>
+    <div class="f-col flex flex-col gap-3 mx-auto ">
+     
+      <div class="contect flex flex-col gap-5">
+        <h2 class="font-bold text-[1.5rem]">About</h2>
+        <a href="#">about as</a>
+        <a href="#">Delivery Infomation</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contect us</a>
+
+        
+      </div>
     </div>
-   </div>
-  
-  <div class="row-video">
-    
-    <div class="row-item">
-    <div class="iframe" >
-      <iframe class="samllvideo" class="samllvideo" width="560" height="315" src="https://www.youtube.com/embed/Fh53p0Tnnxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-       <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://youtu.be/YKMviuNeJ_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
-   
-    <div class="row-item">
-    <div class="iframe">
-    <iframe class="samllvideo" width="100%" height="500" src="https://www.youtube.com/embed/TSPU7M2Q1nM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="heading">
-      <p> 1. the is a heading</p>
-    </div>
-   </div>
+
+    <div class="f-col flex flex-col gap-5 ">
+      <h4 class="font-bold text-[1.5rem]">account</h4>
+      <a href="#">sing in</a>
+      <a href="#">view cart</a>
+      <a href="#">track my order </a>
+      <a href="#">help</a>
+      <a href="#">my wishlist</a>
   </div>
-  
- </section>
- 
+
+    <div class="f-col flex flex-col gap-3 mx-auto">
+      <h4 class="font-bold text-[1.5rem]">install app</h4>
+      <p>from app stroe or goole play</p>
+      <div class="row flex h-[5rem] w-[4rem] gap-2">
+          <img src="images/s/f1.png" alt="">
+          <img src="images/s/f2.png" alt="">
+      </div>
+      <p>online payment is avlabile use upi ,bank , crad</p>
+      <div class="row">
+          <img src="img/payment.png" alt="">
+      </div>
+  </div>
+
+
+    <div class="f-col col-span-full text-center p-5 mt-5">
+      
+    <h4>&copy;copyright <span class="text-orange-700">mr mohit vijay</span> wed devloper</h4>
+    </div>
+  </footer>
+</section>
+
+
+
 </body>
 
-<script>
-  var smallimg = document.getElementsByClassName('samllvideo');
-  
-  
-  smallimg[0].onclick = function(){
-  Mainvideo.src = smallimg[0].src;
-    
-  }
-  
-
-    smallimg[1].onclick = function() {
-     /* Mainvideo.src = smallimg[1].src;*/
-    }  
-    smallimg[2].onclick = function() {
-        Mainvideo.src = smallimg[2].src;
-      } 
-      smallimg[3].onclick = function() {
-          Mainvideo.src = smallimg[3].src;
-        }
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
-<script nomodule src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
-</script>
+<script src="main.js"></script>
 </html>

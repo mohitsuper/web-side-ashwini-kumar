@@ -81,9 +81,35 @@ nav a::after{
 }
 
 .review .review-box{
-  height: 100%;
+  border:1px solid #ccc;
+  height: 8.2rem;
+  padding: .6rem;
+  gap:1rem;
   display: flex;
+  
 }
+
+.review .review-box .img{
+  height: 100%;
+    width:13rem;
+
+
+
+}
+
+.review .review-box .img img{
+  height: 100%;
+  width:100%;
+}
+
+.review-text p{
+  font-size: .7rem;
+}
+
+.review-text h6{
+  color:#BAB350;
+}
+
 
 .form-main input,.form-main textarea{
   border: 1px solid #aaa;
@@ -137,14 +163,24 @@ flex-direction: column;
 
 }
 
+
+
+
+.new-box{
+  height:100%;
+}
+
+.new-box img{
+  height: 100%;
+}
 .mySwiper img{
   width: 100%;
 }
 
-.new-box{
+.feture .new-box{
   position: relative;
   width: 100%;
-  height: 30rem;
+  height: 16rem;
 }
 
 .new-box img{
@@ -164,13 +200,48 @@ flex-direction: column;
 }
 
 
+.pro-item {
+  border: 1px solid #ccc;
+  border-radius:.3rem;
+    height: 100%;
+  display: flex;
+  gap:.5rem;
+  flex-direction: column;
+
+}
+
+.pro-item .img {
+  height: 17rem;
+  flex-basis: 17rem;
+
+}
+.pro-item .img img {
+  height: 100%;
+
+}
+
+.pro-item .cantener{
+  width: 100%;
+  height: 100%;
+    flex-basis: 30%;
+
+}
+
+.pro-item .cantener h1{
+  font-weight: 800;
+  font-size: 1.4rem;
+  color:#555;
+}
+
+
 
 @media only screen and (max-width:540px) {
 
    nav{
     display:flex;
+    padding-top:2rem;
     position: absolute;
-    top :2rem;
+    top :0rem;
     background: white;
     right:100%;
     flex-direction: column;
@@ -180,4 +251,19 @@ flex-direction: column;
    transition: 0.5s right ;
 
   }
+  
+     nav ion-icon{
+       position: absolute ;
+       top:2rem;
+       font-size:3rem;
+       left:2rem;
+     }
+     
+     
+     .product-main{
+       height: 50rem;
+     }
+
+
+
 }

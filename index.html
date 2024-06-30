@@ -24,13 +24,14 @@
 
 <body>
 
- <section class="main container-2xl  mx-auto  w-[100%] fixed top-0 z-10 bg-white" id="main">
-    <header class="container flex inner-center rounded-b-lg  items-center justify-around  mx-auto w-[100%] p-3">
-      <div class="logos w-[100%]">
+ <section class="main container-2xl  mx-auto  w-[100%] h-[5rem] fixed top-0 bg-white z-10 " id="main">
+    <header class="container flex inner-center rounded-b-lg  items-center justify-around  mx-auto w-[100%] h-[100%] p-4">
+      <div class="logos w-[100%] h-[2rem] flex gap-3">
+        <img src="./img/logo.png" class="width-[100%] h-[100%]" alt="">
        <h1 class="logo text-[1rem]">Aswini Kumar.</h1>
       </div>
 
-      <nav class="navbar-big flex gap-5  z-50 sm:z-10 w-[100%] items-center sm:justify-end  sm:flex" id="sidemenu">
+      <nav class="navbar-big flex gap-5 w-[100%] items-center sm:justify-end  sm:flex" id="sidemenu">
         <ion-icon name="close-outline" onclick="openemenu()" class="text-[1.2rem] font-bold  block sm:hidden" id="menu-btu"></ion-icon>
 
         <a href="index.html" class="active">Home</a>
@@ -58,8 +59,8 @@
 
 
   
-  <section id="home" class="home container-2xl mb-5 w-[100%] mx-auto pt-5">
-    <div class="swiper mySwiper container mx-auto w-[100%] ">
+  <section id="home" class="home container-2xl mb-5 w-[100%] mx-auto pt-[5rem] px-5">
+    <div class="swiper mySwiper container-sm mx-auto w-[100%] h-[100%] ">
     <div class="swiper-wrapper w-[100%]">
 
       <div class="swiper-slide">
@@ -91,10 +92,10 @@
   
 
   <section class="product-section container-2xl mx-auto mb-5">
-    <div class="pro-main grid sm:grid-cols-3 grid-cols-2 gap-3 md:grid-cols-5 px-4 container mx-auto">
-      <div class="item">
+    <div class="pro-main grid sm:grid-cols-3 grid-cols-2 gap-3 md:grid-cols-5 px-5 container-sm  mx-auto">
+      <div class="item overflow-hidden">
          <div class="col-1">
-            <img src="img/shop/12.jpg" alt="">
+            <img src="img/shop/12.jpg" alt="" class="">
          </div>
           <h1>white sneakers</h1>
       </div>
@@ -144,14 +145,14 @@
   
   <section class="explor container-2xl mx-auto py-5" id="explor">
 
-    <div class="container flex mx-auto inner-center">
-    <div class="heading py-5 bg-[#eee] p-5 justify-center flex flex-col">
-      <h2 class="heading text-3xl text-center font-[600]">explor<span class="text-orange-600">now</span></h2>
+    <div class="container-sm px-5 flex  flex-wrap mx-auto inner-center">
+    <div class="heading py-5 bg-[#eee] p-5 justify-center flex flex-col w-[100%] sm:basis-[20%]">
+      <h2 class="heading text-3xl text-center font-[600]">explor <span class="text-orange-600">now</span></h2>
       <p class="text-center">india compeny</p>
   </div>
 
   
-    <div class="swiper explors container">
+    <div class="swiper explors container flex basis-[80%]">
     <div class="swiper-wrapper">
     <div class="swiper-slide">
              <img src="img/logo1.jpeg" alt="img/IMG1.JPG">
@@ -201,7 +202,7 @@
     </div>
 
   
-  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3 sm:h-[50rem]">
     
     <div class="pro-item" onclick="window.open('https://amzn.to/3Co059u')">
       <div class="img">
@@ -212,7 +213,7 @@
         <h1 class="heading">t-shrit</h1>
         <p>half  round neak t-shrit for summer color are black</p>
         
-        
+    
         
       </div>
     </div>
@@ -295,7 +296,7 @@
 </section>
 
  <section class="benner-1 benner container-2xl mx-auto w-[100%] ">
-  <div class="container mx-auto bg-[url('./images/bennar/y1.jpg')] h-[20rem] text-center justify-center items-center flex flex-col text-white bg-cover bg-center text-[1.8rem]">
+  <div class="container-sm mx-auto bg-[url('./images/bennar/y1.jpg')] h-[20rem] text-center justify-center items-center flex flex-col text-white bg-cover bg-center text-[1.8rem]">
   <p class="font-light">repair service</p>
   <h1>up to<span class="text-orange-600">70% off</span>-All T-Shrit And asseres</h1>
   <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
@@ -309,7 +310,7 @@
         <p class="text-center">lest 3 months sales products</p>
     </div>
 
-  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3">
+  <div class="product-main container mx-auto grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-3 ">
     
 <div class="pro-item" onclick="window.open('sproduct.html')">
       <div class="img">
@@ -460,7 +461,7 @@
  
 
 <section class="benner-2 benner container-2xl mx-auto w-[100%] ">
-  <div class="container mx-auto bg-[url('./images/bennar/y2.jpg')] h-[20rem] text-center justify-center items-center flex flex-col bg-cover bg-center text-white  text-[1.8rem]">
+  <div class="container-sm mx-auto bg-[url('./images/bennar/y2.jpg')] h-[20rem] text-center justify-center items-center flex flex-col bg-cover bg-center text-white  text-[1.8rem]">
   <p class="font-light">repair service</p>
   <h1>up to<span class="text-orange-700">70% off</span>-All T-Shrit And asseres</h1>
   <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
@@ -468,7 +469,7 @@
 </section>
 
 
-   <section class="product container-2xl mx-auto ">
+   <section class="product container-2xl mx-auto my-5">
      
   
     <div class="heading py-5">
@@ -625,7 +626,7 @@
 
 
 <section class="benner-2 benner container-2xl mx-auto w-[100%] ">
-  <div class="container mx-auto bg-[url('./images/bennar/y3.jpg')] h-[20rem] text-center justify-center items-center flex flex-col bg-cover bg-center text-white  text-[1.8rem]">
+  <div class="container-sm mx-auto bg-[url('./images/bennar/y3.jpg')] h-[20rem] text-center justify-center items-center flex flex-col bg-cover bg-center text-white  text-[1.8rem]">
   <p class="font-light">repair service</p>
   <h1>up to<span class="text-orange-700">70% off</span>-All T-Shrit And asseres</h1>
   <a href="shop.html" class="bg-white p-3 mt-4 text-[.8rem] text-[#333]">Explor Now</a>
@@ -635,7 +636,7 @@
 
  <!-------fetures explan html page----->
 <section class="fetures cantainer-2xl mx-auto px-3 my-5">
-  <div class="feture container mx-auto grid sm:grid-cols-3 grid-cols-2 gap-3  w-[100%]">
+  <div class="feture container-sm mx-auto grid sm:grid-cols-3 grid-cols-2 gap-3  w-[100%] h-[50rem] sm:h-[34rem]">
 
     <div class="new-box">
       <img src="images/bennar/b18.jpg" alt="images/s/f1.png" class="h-[100%]">
@@ -687,7 +688,7 @@
 </section>
 
 <section class="news container-2xl mx-auto ">
-  <div class="new container mx-auto bg-[url('images/bennar/y4.jpg')] h-[20rem] bg-cover bg-center flex justify-center items-center  flex-row justify-around gap-3 text-2xl text-white flex-col md:flex-row px-3">
+  <div class="new container-sm mx-auto bg-[url('images/bennar/y4.jpg')] h-[20rem] bg-cover bg-center flex justify-center items-center  flex-row justify-around gap-3 text-2xl text-white flex-col md:flex-row px-3">
 
    <div class="flex gap-2 flex-col">
      <h1>up to 70% off all product
@@ -709,7 +710,7 @@
 
 
 <section class="footer container-2xl mt-[5rem] mx-auto">
-  <footer class="f-main container grid grid-cols-2 gap-4 sm:grid-cols-4 px-4 mx-auto">
+  <footer class="f-main container-sm grid grid-cols-2 gap-4 sm:grid-cols-4 px-4 mx-auto">
     <div class="f-col flex flex-col gap-3 mx-auto gap-3 ">
       <div class="log w-[5rem] h-[5rem]">
         <img src="img/logo.png" alt="" class="w-[100%]">
